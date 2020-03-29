@@ -1,0 +1,25 @@
+{
+  "name": "saytspb",
+  "version": "1.0.0",
+  "description": "Сайт компании по продвижению сайтов в Санкт-Петербурге",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-designer-life/saytspb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-designer-life/saytspb/issues"
+  },
+  "homepage": "https://github.com/web-designer-life/saytspb#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
