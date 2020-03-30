@@ -304,5 +304,299 @@ template {
 [hidden] {
   display: none; }
 
+.button {
+  padding: 15px 30px 17px 32px;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.93rem; }
+  .button:hover {
+    cursor: pointer; }
+  .button--primary {
+    border: none;
+    background-color: #ff5a3c;
+    color: #fff;
+    transition: box-shadow 0.3s; }
+    .button--primary:hover {
+      cursor: pointer;
+      background-color: #ef2500; }
+  .button--outline {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff; }
+    .button--outline:hover {
+      color: #bdbdbd;
+      border: 1px solid #bdbdbd; }
+  .button:active, .button:focus {
+    outline: none; }
+  .button::-moz-focus-inner {
+    border: 0; }
+
+.container {
+  max-width: 90%;
+  margin: auto; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
+
+html {
+  font-size: 14px; }
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem; }
+
+img {
+  max-width: 100%; }
+
+.header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: transparent;
+  padding: 32px; }
+  .header__container {
+    max-width: 1170px;
+    margin: auto; }
+  .header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header__logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu';
+    font-size: 1.857rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.73;
+    letter-spacing: 0.52px;
+    text-align: left;
+    color: #38393b;
+    margin-right: 197px; }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 369px;
+    margin-right: 44px; }
+  .header__contacts {
+    display: flex;
+    align-items: center; }
+
+.burger__menu-button {
+  display: none; }
+
+.logo__link {
+  outline: none;
+  position: relative;
+  font-size: 1.857rem;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 13px;
+  transition: 0.3s; }
+  .logo__link:hover {
+    cursor: pointer;
+    color: #838589; }
+
+.nav__item {
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  font-family: 'Ubuntu';
+  font-size: 1.143rem;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #38393b; }
+  .nav__item::after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 2px;
+    margin-top: 6px;
+    margin-left: 17%;
+    background-color: #ff5a3c;
+    transition: 0.2s;
+    width: 0%; }
+  .nav__item:hover {
+    cursor: pointer;
+    color: #000;
+    font-weight: 400; }
+    .nav__item:hover::after {
+      width: 67%; }
+
+.phone {
+  color: #ff5a3c;
+  transition: 0.3s; }
+  .phone:hover {
+    text-decoration: none;
+    opacity: 0.5; }
+
+.contacts__phone {
+  outline: none;
+  font-family: 'Ubuntu';
+  font-size: 1.286rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: #38393b;
+  text-decoration: none;
+  margin-right: 40px; }
+  .contacts__phone:hover {
+    cursor: pointer;
+    color: #838589; }
+
+.contacts__button {
+  font-family: 'Ubuntu';
+  font-size: 1.143rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  transition: 0.3s; }
+
+@media screen and (max-width: 1250px) {
+  .header__logo {
+    margin-right: auto; }
+  .header__nav {
+    margin-right: 14px; }
+  .contacts__phone {
+    margin-right: 14px; } }
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 12px; }
+  .header__nav {
+    display: none; }
+  .contacts__phone {
+    margin-right: 14px; } }
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    margin-right: auto; }
+  .header__nav {
+    margin-right: 14px; }
+  .contacts__phone {
+    margin-right: 14px; } }
+
+@media screen and (max-width: 540px) {
+  .header__menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    color: #fff;
+    background-color: #4e000a;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px;
+    border-radius: 0 0 0 50px;
+    display: none; }
+    .header__menu--active {
+      display: block; }
+  .header__logo {
+    margin: auto; }
+  .header__nav {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+  .header__contacts {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5px; }
+  .header__burger {
+    width: 42px;
+    height: 42px;
+    background-color: #ff5a3c;
+    border-radius: 50%; }
+  .logo__link {
+    color: #fff; }
+    .logo__link:hover {
+      cursor: pointer;
+      color: #9d9fa2; }
+  .nav__item {
+    color: #fff;
+    margin-top: 15px; }
+    .nav__item::after {
+      position: absolute;
+      content: '';
+      display: block;
+      height: 2px;
+      margin-top: 6px;
+      margin-left: 17%;
+      background-color: #ff5a3c;
+      transition: 0.2s;
+      width: 0%; }
+    .nav__item:hover {
+      cursor: pointer;
+      color: #cccccc;
+      font-weight: 400; }
+      .nav__item:hover::after {
+        width: 67%; }
+  .contacts__phone {
+    color: #fff;
+    margin: auto;
+    margin-bottom: 5px; }
+    .contacts__phone:hover {
+      cursor: pointer;
+      color: #ececec; }
+  .burger {
+    position: fixed;
+    right: 15px;
+    top: 15px; }
+    .burger__menu-button {
+      display: block;
+      position: absolute;
+      left: 6px;
+      top: 47%;
+      width: 30px;
+      height: 3px;
+      background: #fff;
+      border: none;
+      cursor: pointer;
+      z-index: 15;
+      border-radius: 3px; }
+      .burger__menu-button::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        transition: transform 0.2s;
+        margin-top: -7px;
+        border-radius: 3px; }
+      .burger__menu-button::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        transition: transform 0.2s;
+        margin-top: 7px;
+        border-radius: 3px; }
+      .burger__menu-button--active {
+        height: 0; }
+        .burger__menu-button--active::before {
+          transform: rotate(45deg);
+          margin-top: 0; }
+        .burger__menu-button--active::after {
+          transform: rotate(-45deg);
+          margin-top: 0; } }

@@ -3,11 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAYTSPB</title>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <title>SAYTSPB</title>
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__menu">
+        <div class="logo header__logo">
+          <img src="img/logo.png" alt="logo">
+          <a class="logo__link" href="#">SAYTSPB</a>
+        </div>
+        <nav id="menu" class="nav header__nav">
+          <a href="#" class="nav__item">Продвижение</a>
+          <a href="#" class="nav__item">Аудит</a>
+          <a href="#" class="nav__item">Цены</a>
+          <a href="#" class="nav__item">Контакты</a>
+        </nav>
+        <div class="contacts header__contacts">
+          <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
+          <button class="button contacts__button button--primary">Заказать звонок</button>
+        </div>
+      </div>
+      <!-- /.menu -->
+      <div class="burger header__burger">
+          <div class="burger__menu-button"></div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

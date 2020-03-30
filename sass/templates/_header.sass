@@ -1,0 +1,116 @@
+.header
+  position: fixed
+  right: 0
+  top: 0
+  width: 100%
+  z-index: 99
+  background-color: transparent
+  padding: 32px
+  &__container
+    max-width: 1170px
+    margin: auto
+  &__menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__logo
+    display: flex
+    align-items: center
+    font-family: 'Ubuntu'
+    font-size: 1.857rem
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: 0.73
+    letter-spacing: 0.52px
+    text-align: left
+    color: $black
+    margin-right: 197px
+  &__nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 369px
+    margin-right: 44px
+  &__contacts
+    display: flex
+    align-items: center
+.burger
+  &__menu-button
+    display: none
+.logo
+  &__link
+    outline: none
+    position: relative
+    font-size: 1.857rem
+    color: $dark
+    text-transform: uppercase
+    text-decoration: none
+    margin-left: 13px
+    transition: 0.3s
+    &:hover
+      cursor: pointer
+      color: lighten($black, 30%)
+.nav
+  &__item
+    outline: none
+    position: relative
+    text-decoration: none
+    text-transform: uppercase
+    transition: color 0.2s
+    font-family: 'Ubuntu'
+    font-size: 1.143rem
+    font-weight: 400
+    font-stretch: normal
+    font-style: normal
+    letter-spacing: normal
+    color: $black
+    &::after
+      position: absolute
+      content: ''
+      display: block
+      height: 2px
+      margin-top: 6px
+      margin-left: 17%
+      background-color: $primary
+      transition: 0.2s
+      width: 0%
+    &:hover
+      cursor: pointer
+      color: $dark
+      font-weight: 400
+      &::after
+        width: 67%
+.phone
+  color: $primary
+  transition: 0.3s
+  &:hover
+    text-decoration: none
+    opacity: 0.5
+.contacts
+  &__phone
+    outline: none
+    font-family: 'Ubuntu'
+    font-size: 1.286rem
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: 2.06
+    letter-spacing: normal
+    text-align: left
+    color: $black
+    text-decoration: none
+    margin-right: 40px
+    &:hover
+      cursor: pointer
+      color: lighten($black, 30%)
+  &__button
+    font-family: 'Ubuntu'
+    font-size: 1.143rem
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    letter-spacing: normal
+    text-align: left
+    color: $light
+    transition: 0.3s
