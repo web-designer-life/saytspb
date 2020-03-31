@@ -1,0 +1,99 @@
+.hero 
+  position: relative
+  display: flex
+  height: 100vh
+  color: $light
+  padding: 32px
+  background: url('../img/hero/bg.png') top left no-repeat
+  &__content
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 1170px
+    margin: auto
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: transporent
+  &__text
+    position: relative
+    font-family: 'Ubuntu'
+    font-size: 1.43rem
+    font-weight: 300
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.47
+    letter-spacing: normal
+    word-spacing: 0
+    text-align: left
+    max-width: 565px
+    color: $onix
+    margin-top: 0
+    margin-bottom: 37px
+    margin-left: 4px
+  &__button
+    position: relative
+    padding: 12px 40px 15px 36px
+    font-family: 'Ubuntu'
+    font-size: 1.14rem
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    letter-spacing: normal
+    text-align: left
+    margin-left: 4px
+  &__social
+    display: flex
+    flex-direction: column
+    height: 100%
+    padding-left: 24px
+  &__title
+    position: relative
+    margin-bottom: 0
+    max-width: 667px
+    font-family: 'Ubuntu'
+    font-size: 4.39rem
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.24
+    letter-spacing: -3px
+    word-spacing: 5px
+    color: $darken 
+    margin-bottom: 37px 
+    &--primary
+      color: $primary  
+.social
+  position: fixed
+  font-family: 'Futura Demi'
+  font-size: 14px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: transporent
+  &__link
+    display: flex
+    align-items: center
+    text-transform: uppercase
+    text-decoration: none
+    color: $primary
+    line-height: 0.8
+    font-style: 1.1rem
+    width: 22px
+    height: 22px
+    margin-top: 29px
+    &:hover
+      opacity: 0.5
+  &::before
+    content: ''
+    width: 4px
+    height: 620px
+    background-color: $primary
+    border-radius: 2px
+    margin-bottom: 9px
+

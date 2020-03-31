@@ -1,6 +1,6 @@
 .button
-  padding: 15px 30px 17px 32px
-  border: none
+  padding: 9px 28px 12px 30px
+  border: 2px solid $light
   border-radius: 30px
   font-size: 0.93rem
   &:hover
@@ -10,13 +10,18 @@
     background-color: $primary
     color: $light
     transition: box-shadow 0.3s
+    border: 2px solid $primary
+    transition: 0.3s
     &:hover
       cursor: pointer
-      background-color: darken($primary, 15%)
+      color: $primary
+      background-color: $light
   &--outline
     border: 1px solid $light
     background-color: transparent
     color: $light
+    border: 2px solid $primary
+    transition: 0.3s
     &:hover
       color: #bdbdbd
       border: 1px solid #bdbdbd
