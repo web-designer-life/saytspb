@@ -68,29 +68,14 @@
     &__item
       color: $light
       margin-top: 15px
-      &::after
-        position: absolute
-        content: ''
-        display: block
-        height: 2px
-        margin-top: 6px
-        margin-left: 17%
-        background-color: $primary
-        transition: 0.2s
-        width: 0%
       &:hover
-        cursor: pointer
         color: darken($light, 20%)
-        font-weight: 400
-        &::after
-          width: 67%
   .contacts
     &__phone
       color: $light
       margin: auto
       margin-bottom: 5px
       &:hover
-        cursor: pointer
         color: lighten($black, 70%)
   .burger
     position: fixed
