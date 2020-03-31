@@ -4,7 +4,26 @@
   height: 100vh
   color: $light
   padding: 32px
-  background: url('../img/hero/bg.png') top left no-repeat
+  &__start
+    position: absolute
+    top: 0
+    left: 0
+  &__line
+    position: absolute
+    top: 12.5%
+    right: 6%
+  &__lines
+    position: absolute
+    bottom: 5%
+    right: 7%
+  &__seo 
+    position: absolute
+    bottom: 15%
+    left: 9%
+  &__main
+    position: absolute
+    top: 16%
+    right: 9.5%
   &__content
     position: relative
     display: flex
@@ -67,7 +86,7 @@
     color: $darken 
     margin-bottom: 37px 
     &--primary
-      color: $primary  
+      color: $primary 
 .social
   position: fixed
   font-family: 'Futura Demi'

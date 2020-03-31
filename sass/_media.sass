@@ -2,6 +2,14 @@
   .hero
     &__social
       display: none
+    &__seo
+      left: 2%
+    &__lines
+      width: 17%
+    &__main
+      width: 40%
+      top: 30%
+      right: 4%
 @media screen and ( max-width: 1234px ) 
   .hero 
     &__content
@@ -15,6 +23,10 @@
   .contacts
     &__phone
       margin-right: 14px
+  .hero
+    &__seo
+      left: 5%
+      bottom: 5%
 @media screen and ( max-width: 992px ) 
   html
     font-size: 12px
@@ -24,6 +36,22 @@
   .contacts
     &__phone
       margin-right: 14px
+  .hero
+    &__start
+      width: 70%
+    &__line
+      width: 20%
+    &__seo
+      width: 15%
+      left: 5%
+      bottom: 5%
+    &__main
+      top: 1%
+      left: 5%
+      width: 50%
+      display: none
+    &__title
+      max-width: 565px
 @media screen and ( max-width: 768px ) 
   .header
     &__logo
@@ -33,6 +61,15 @@
   .contacts
     &__phone
       margin-right: 14px
+  .hero
+    &__seo
+      width: 15%
+      bottom: 3%
+    &__title
+      max-width: 370px
+      font-size: 3rem
+    &__text
+      max-width: 500px
 @media screen and ( max-width: 540px )       
   .header
     &__menu
@@ -131,3 +168,16 @@
         &::after
           transform: rotate(-45deg)
           margin-top: 0
+  .hero
+    &__seo
+      display: block
+      width: 15%
+      left: 5%
+      bottom: 2%
+    &__main
+      display: none
+    &__title
+      max-width: 230px
+      font-size: 2rem
+    &__text
+      font-size: 1rem

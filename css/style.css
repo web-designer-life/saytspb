@@ -475,8 +475,27 @@ img {
   display: flex;
   height: 100vh;
   color: #fff;
-  padding: 32px;
-  background: url("../img/hero/bg.png") top left no-repeat; }
+  padding: 32px; }
+  .hero__start {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .hero__line {
+    position: absolute;
+    top: 12.5%;
+    right: 6%; }
+  .hero__lines {
+    position: absolute;
+    bottom: 5%;
+    right: 7%; }
+  .hero__seo {
+    position: absolute;
+    bottom: 15%;
+    left: 9%; }
+  .hero__main {
+    position: absolute;
+    top: 16%;
+    right: 9.5%; }
   .hero__content {
     position: relative;
     display: flex;
@@ -572,7 +591,15 @@ img {
 
 @media screen and (max-width: 1440px) {
   .hero__social {
-    display: none; } }
+    display: none; }
+  .hero__seo {
+    left: 2%; }
+  .hero__lines {
+    width: 17%; }
+  .hero__main {
+    width: 40%;
+    top: 30%;
+    right: 4%; } }
 
 @media screen and (max-width: 1234px) {
   .hero__content {
@@ -584,7 +611,10 @@ img {
   .header__nav {
     margin-right: 14px; }
   .contacts__phone {
-    margin-right: 14px; } }
+    margin-right: 14px; }
+  .hero__seo {
+    left: 5%;
+    bottom: 5%; } }
 
 @media screen and (max-width: 992px) {
   html {
@@ -592,7 +622,22 @@ img {
   .header__nav {
     display: none; }
   .contacts__phone {
-    margin-right: 14px; } }
+    margin-right: 14px; }
+  .hero__start {
+    width: 70%; }
+  .hero__line {
+    width: 20%; }
+  .hero__seo {
+    width: 15%;
+    left: 5%;
+    bottom: 5%; }
+  .hero__main {
+    top: 1%;
+    left: 5%;
+    width: 50%;
+    display: none; }
+  .hero__title {
+    max-width: 565px; } }
 
 @media screen and (max-width: 768px) {
   .header__logo {
@@ -600,7 +645,15 @@ img {
   .header__nav {
     margin-right: 14px; }
   .contacts__phone {
-    margin-right: 14px; } }
+    margin-right: 14px; }
+  .hero__seo {
+    width: 15%;
+    bottom: 3%; }
+  .hero__title {
+    max-width: 370px;
+    font-size: 3rem; }
+  .hero__text {
+    max-width: 500px; } }
 
 @media screen and (max-width: 540px) {
   .header__menu {
@@ -695,4 +748,16 @@ img {
           margin-top: 0; }
         .burger__menu-button--active::after {
           transform: rotate(-45deg);
-          margin-top: 0; } }
+          margin-top: 0; }
+  .hero__seo {
+    display: block;
+    width: 15%;
+    left: 5%;
+    bottom: 2%; }
+  .hero__main {
+    display: none; }
+  .hero__title {
+    max-width: 230px;
+    font-size: 2rem; }
+  .hero__text {
+    font-size: 1rem; } }
