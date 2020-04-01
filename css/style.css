@@ -344,11 +344,22 @@ template {
   margin: auto;
   max-width: 1920px; }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
 .col-25 {
   display: flex;
+  flex-basis: 25%;
   flex-direction: column;
-  align-items: center;
-  width: 25%; }
+  align-items: center; }
+
+.col-33 {
+  display: flex;
+  flex-basis: 33%;
+  flex-direction: column;
+  align-items: center; }
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -630,7 +641,8 @@ img {
     padding-bottom: 7.7rem;
     background: url(../img/video/bg.jpg) center no-repeat;
     box-shadow: 0 0 21.6px 5.4px rgba(34, 34, 34, 0.05);
-    background-color: #fff; }
+    background-color: #fff;
+    z-index: 1; }
   .video__number {
     font-family: 'Ubuntu';
     font-size: 4.46rem;
@@ -679,6 +691,70 @@ img {
     border-radius: 50%;
     left: -14px;
     top: -14px; }
+
+.advantages {
+  margin-top: 6.43rem;
+  padding: 32px; }
+  .advantages__container {
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .advantages__main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: normal;
+    color: #2c2c2d;
+    margin: auto;
+    margin-bottom: 2.286rem;
+    padding-left: 10px; }
+  .advantages__text {
+    font-size: 1.14rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2c2c2d;
+    margin: auto;
+    margin-bottom: 4.4rem;
+    max-width: 802px; }
+  .advantages__col {
+    margin-bottom: 3.1rem;
+    width: 322px; }
+  .advantages__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px; }
+  .advantages__title {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.43rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.85;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c2c2d; }
+  .advantages__description {
+    margin-top: 0.4rem;
+    font-size: 1.14rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #454646;
+    width: 296px; }
 
 @media screen and (max-width: 1440px) {
   .hero__social {
@@ -889,7 +965,9 @@ img {
     font-size: 1rem; }
   .video__play {
     top: 53.5%;
-    left: 38.5%; } }
+    left: 38.5%; }
+  .advantages__main-title {
+    font-size: 1.8rem; } }
 
 @media screen and (max-height: 540px) {
   .hero__main {

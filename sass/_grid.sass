@@ -4,10 +4,18 @@
 .box
   margin: auto
   max-width: 1920px
+.row
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
 .col
   &-25
     display: flex
+    flex-basis: 25%
     flex-direction: column
     align-items: center
-    width: 25%
-  
+  &-33
+    display: flex
+    flex-basis: 33%
+    flex-direction: column
+    align-items: center
