@@ -13,6 +13,17 @@
       width: 35%
       top: 30%
       right: 4%
+  .services
+    &__triangle
+      right: 5%
+    &__circle
+      right: 30%
+    &__points
+      width: 50%
+      right: 35%
+      bottom: -2%
+    &__lines
+      width: 30%
 @media screen and ( max-width: 1250px ) 
   .header
     &__logo
@@ -43,6 +54,9 @@
   .video
     &__description
       display: none
+  .services
+    &__circle
+      bottom: 25%
 @media screen and ( max-width: 992px ) 
   html
     font-size: 12px
@@ -73,6 +87,17 @@
       max-width: 565px
     &__text
       max-width: 400px
+  .services
+    &__triangle
+      top: 12%
+@media screen and ( max-width: 773px )       
+  .services
+    &__triangle
+      top: 9%
+      right: 14%
+    &__col
+      &--none
+        display: none
 @media screen and ( max-width: 768px ) 
   .header
     &__logo
@@ -97,6 +122,12 @@
     &__play
       top: 53.5%
       left: 44.5%
+  .services
+    &__lines
+      bottom: 35%
+    &__circle
+      top: 30%
+      left: 3%
 @media screen and ( max-height: 768px )       
   .hero
     &__main
@@ -226,6 +257,17 @@
   .advantages
     &__main-title
       font-size: 1.8rem
+  .services
+    &__col
+      width: 100%
+    &__triangle
+      right: 3%
+    &__points
+      bottom: 0
+    &__lines
+      bottom: 18%
+    &__circle
+      top: 40%
 @media screen and ( max-height: 540px )       
   .hero
     &__main

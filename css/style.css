@@ -757,6 +757,107 @@ img {
     color: #454646;
     width: 296px; }
 
+.services {
+  position: relative;
+  max-width: 1920px;
+  margin: auto;
+  padding: 32px; }
+  .services__circle {
+    position: absolute;
+    right: 35%;
+    bottom: -2%;
+    z-index: -1; }
+  .services__points {
+    position: absolute;
+    left: 0.4%;
+    bottom: -1%;
+    z-index: -1; }
+  .services__lines {
+    position: absolute;
+    right: 0;
+    bottom: 3%;
+    z-index: -1; }
+  .services__triangle {
+    position: absolute;
+    right: 17%;
+    top: 17%;
+    z-index: -1; }
+  .services__container {
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .services__main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: normal;
+    color: #2c2c2d;
+    margin: auto;
+    margin-bottom: 2.1rem;
+    padding-left: 20px; }
+  .services__text {
+    font-size: 1.14rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2c2c2d;
+    margin: auto;
+    margin-bottom: 4rem;
+    max-width: 802px; }
+  .services__col {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 3.1rem;
+    width: 322px;
+    border-radius: 5px;
+    border: solid 1px #c9c8c8;
+    width: 355px;
+    padding: 2.78rem 2.5rem 3.37rem 2.29rem; }
+    .services__col:hover {
+      border: none;
+      padding: 2.86rem 2.57rem 3.07rem 2.36rem;
+      box-shadow: 0 0 10.4px 2.6px rgba(34, 34, 34, 0.05);
+      border-bottom: solid 5px #ff5a3c; }
+    .services__col--none {
+      visibility: hidden; }
+  .services__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px; }
+  .services__title {
+    margin-top: 1.31rem;
+    margin-bottom: 0;
+    font-size: 1.85rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c2c2d; }
+  .services__description {
+    margin-top: 1.4rem;
+    font-size: 1.14rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #454646; }
+
 @media screen and (max-width: 1440px) {
   .hero__social {
     display: none; }
@@ -770,7 +871,17 @@ img {
   .hero__main {
     width: 35%;
     top: 30%;
-    right: 4%; } }
+    right: 4%; }
+  .services__triangle {
+    right: 5%; }
+  .services__circle {
+    right: 30%; }
+  .services__points {
+    width: 50%;
+    right: 35%;
+    bottom: -2%; }
+  .services__lines {
+    width: 30%; } }
 
 @media screen and (max-width: 1250px) {
   .header__logo {
@@ -796,7 +907,9 @@ img {
   .hero__content {
     margin-left: 0; }
   .video__description {
-    display: none; } }
+    display: none; }
+  .services__circle {
+    bottom: 25%; } }
 
 @media screen and (max-width: 992px) {
   html {
@@ -824,7 +937,16 @@ img {
   .hero__title {
     max-width: 565px; }
   .hero__text {
-    max-width: 400px; } }
+    max-width: 400px; }
+  .services__triangle {
+    top: 12%; } }
+
+@media screen and (max-width: 773px) {
+  .services__triangle {
+    top: 9%;
+    right: 14%; }
+  .services__col--none {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
   .header__logo {
@@ -845,7 +967,12 @@ img {
     max-width: 500px; }
   .video__play {
     top: 53.5%;
-    left: 44.5%; } }
+    left: 44.5%; }
+  .services__lines {
+    bottom: 35%; }
+  .services__circle {
+    top: 30%;
+    left: 3%; } }
 
 @media screen and (max-height: 768px) {
   .hero__main {
@@ -968,7 +1095,17 @@ img {
     top: 53.5%;
     left: 38.5%; }
   .advantages__main-title {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .services__col {
+    width: 100%; }
+  .services__triangle {
+    right: 3%; }
+  .services__points {
+    bottom: 0; }
+  .services__lines {
+    bottom: 18%; }
+  .services__circle {
+    top: 40%; } }
 
 @media screen and (max-height: 540px) {
   .hero__main {
