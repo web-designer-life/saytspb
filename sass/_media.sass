@@ -2,6 +2,9 @@
   .hero
     &__social
       display: none
+    &__multiply
+      top: 30%
+      left: 5%
     &__seo
       left: 2%
     &__lines
@@ -10,10 +13,6 @@
       width: 35%
       top: 30%
       right: 4%
-@media screen and ( max-width: 1234px ) 
-  .hero 
-    &__content
-      margin-left: 0
 @media screen and ( max-width: 1250px ) 
   .header
     &__logo
@@ -24,11 +23,26 @@
     &__phone
       margin-right: 14px
   .hero
+    &__multiply
+      width: 7%
+      top: 30%
+      left: 2%
     &__seo
       left: 5%
       bottom: 5%
     &__main
       top: 35%
+  .video
+    &__play
+      top: 54.5%
+      left: 45%
+@media screen and ( max-width: 1234px ) 
+  .hero 
+    &__content
+      margin-left: 0
+  .video
+    &__description
+      display: none
 @media screen and ( max-width: 992px ) 
   html
     font-size: 12px
@@ -39,8 +53,12 @@
     &__phone
       margin-right: 14px
   .hero
+    &__multiply
+      width: 7%
+      top: 30%
+      left: 2%
     &__start
-      width: 70%
+      width: 80%
     &__line
       width: 20%
     &__seo
@@ -75,24 +93,39 @@
       font-size: 3rem
     &__text
       max-width: 500px
+  .video
+    &__play
+      top: 53.5%
+      left: 44.5%
+@media screen and ( max-height: 768px )       
+  .hero
+    &__main
+      width: 30%
+@media screen and ( max-height: 600px )       
+  .hero
+    &__multiply
+      width: 7%
+      top: 25%
+      left: 2%
 @media screen and ( max-width: 540px )       
   .header
-    &__menu
+    &__information
       position: absolute
-      right: 0
+      right: 20px
       top: 0
       width: auto
       color: $light
       background-color: #4e000a
       display: flex
       flex-direction: column
-      padding: 20px 60px
-      border-radius: 0 0 0 50px
+      padding: 0px 30px 12px 20px
+      margin-top: 20px
+      border-radius: 20px
       display: none
       &--active
         display: block
     &__logo
-      margin: auto
+      margin-left: 0 
     &__nav
       width: auto
       display: flex
@@ -110,10 +143,10 @@
       border-radius: 50%
   .logo
     &__link
-      color: $light
+      color: $dark
       &:hover
         cursor: pointer
-        color: lighten($black, 40%)
+        color: lighten($black, 30%)
   .nav
     &__item
       color: $light
@@ -129,8 +162,8 @@
         color: lighten($black, 70%)
   .burger
     position: fixed
-    right: 15px
-    top: 15px
+    right: 32px
+    top: 32px
     &__menu-button
       display: block
       position: absolute
@@ -186,3 +219,19 @@
       font-size: 2rem
     &__text
       font-size: 1rem
+  .video
+    &__play
+      top: 53.5%
+      left: 38.5%
+@media screen and ( max-height: 540px )       
+  .hero
+    &__main
+      display: none
+@media screen and ( max-height: 400px )
+  .video
+    &__background
+      margin-top: 15rem
+@media screen and ( max-width: 400px )       
+  .video
+    &__play
+      left: 36.5%

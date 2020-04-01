@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>SAYTSPB</title>
 </head>
@@ -16,15 +17,17 @@
           <img src="img/header/logo.png" alt="logo">
           <a class="logo__link" href="#">SAYTSPB</a>
         </div>
-        <nav id="menu" class="nav header__nav">
-          <a href="#" class="nav__item">Продвижение</a>
-          <a href="#" class="nav__item">Аудит</a>
-          <a href="#" class="nav__item">Цены</a>
-          <a href="#" class="nav__item">Контакты</a>
-        </nav>
-        <div class="contacts header__contacts">
-          <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
-          <button class="button contacts__button button--primary">Заказать звонок</button>
+        <div class="header__information">
+          <nav id="menu" class="nav header__nav">
+            <a href="#" class="nav__item">Продвижение</a>
+            <a href="#" class="nav__item">Аудит</a>
+            <a href="#" class="nav__item">Цены</a>
+            <a href="#" class="nav__item">Контакты</a>
+          </nav>
+          <div class="contacts header__contacts">
+            <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
+            <button class="button contacts__button button--primary">Заказать звонок</button>
+          </div>
         </div>
       </div>
       <!-- /.menu -->
@@ -38,6 +41,7 @@
   <main>
     <section id="hero" class="hero">
       <div class="hero__start"><img src="img/hero/start-bg.png" alt="start-image"></div>
+      <div class="hero__multiply"><img src="img/hero/multiply.png" alt="multiply"></div>
       <div class="hero__line"><img src="img/hero/line-bg.png" alt="line"></div>
       <div class="hero__seo"><img src="img/hero/SEO.png" alt="SEO"></div>
       <div class="hero__lines"><img src="img/hero/lines-bg.png" alt="lines"></div>
@@ -63,8 +67,39 @@
       <!-- /.hero__content -->
     </section>
     <!-- /.hero -->
+    <section class="video">
+      <div class="box video__box">
+        <div class="container video__container">
+          <div class="video__description">
+            <div class="col-25">
+              <span class="video__number">11</span>
+              <span class="video__text">Лет на рынке</span>
+            </div>
+            <div class="col-25">
+              <span class="video__number">&gt;200</span>
+              <span class="video__text">Клиентов на раскрутке</span>
+            </div>
+            <div class="col-25">
+              <span class="video__number">121%</span>
+              <span class="video__text">Присрост посещаемости</span>
+            </div>
+            <div class="col-25">
+              <span class="video__number">2200</span>
+              <span class="video__text">Заявок у клиентов</span>
+            </div>
+          </div>
+        </div>
+        <!-- /.container -->
+        <img class="video__background" src="img/video/video-bg.jpg" alt="video-bg">
+      </div>
+      <a data-fancybox href="https://www.youtube.com/watch?v=5qap5aO4i9A" class="play video__play">
+        <img class="play__img" src="img/video/play.svg" alt="play">
+      </a>
+    </section>
+    <!-- /.section video -->
   </main>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
