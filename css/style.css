@@ -390,7 +390,8 @@ img {
   .header__menu {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    transition: 0.3s; }
   .header__logo {
     display: flex;
     align-items: center;
@@ -667,7 +668,7 @@ img {
     display: flex;
     justify-content: center;
     top: 60.5%;
-    left: 48%; }
+    left: 47%; }
 
 .play {
   width: 94px;
@@ -900,8 +901,8 @@ img {
   .hero__main {
     top: 35%; }
   .video__play {
-    top: 54.5%;
-    left: 45%; } }
+    top: 60.5%;
+    left: 47%; } }
 
 @media screen and (max-width: 1234px) {
   .hero__content {
@@ -910,6 +911,9 @@ img {
     display: none; }
   .video__background {
     margin-top: 0; }
+  .video__play {
+    top: 40.5%;
+    left: 47%; }
   .services__circle {
     bottom: 25%; }
   .row {
@@ -942,6 +946,9 @@ img {
     max-width: 565px; }
   .hero__text {
     max-width: 400px; }
+  .video__play {
+    top: 37.5%;
+    left: 47%; }
   .services__triangle {
     top: 12%; } }
 
@@ -970,7 +977,7 @@ img {
   .hero__text {
     max-width: 500px; }
   .video__play {
-    top: 53.5%;
+    top: 36.5%;
     left: 44.5%; }
   .advantages__main-title {
     padding-left: 0; }
@@ -1100,8 +1107,8 @@ img {
   .hero__text {
     font-size: 1rem; }
   .video__play {
-    top: 53.5%;
-    left: 38.5%; }
+    top: 36.5%;
+    left: 40.5%; }
   .advantages__main-title {
     font-size: 2.8rem; }
   .services__triangle {
