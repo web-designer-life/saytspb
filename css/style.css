@@ -910,6 +910,8 @@ img {
     margin-left: 0; }
   .video__description {
     display: none; }
+  .video__background {
+    margin-top: 0; }
   .services__circle {
     bottom: 25%; }
   .row {
