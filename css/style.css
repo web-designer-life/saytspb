@@ -712,7 +712,8 @@ img {
     color: #2c2c2d;
     margin: auto;
     margin-bottom: 2.286rem;
-    padding-left: 10px; }
+    padding-left: 10px;
+    text-align: center; }
   .advantages__text {
     font-size: 1.14rem;
     font-weight: normal;
@@ -727,7 +728,7 @@ img {
     max-width: 802px; }
   .advantages__col {
     margin-bottom: 3.1rem;
-    width: 322px; }
+    max-width: 322px; }
   .advantages__image {
     display: flex;
     align-items: center;
@@ -798,7 +799,8 @@ img {
     color: #2c2c2d;
     margin: auto;
     margin-bottom: 2.1rem;
-    padding-left: 20px; }
+    padding-left: 20px;
+    text-align: center; }
   .services__text {
     font-size: 1.14rem;
     font-weight: normal;
@@ -970,6 +972,10 @@ img {
   .video__play {
     top: 53.5%;
     left: 44.5%; }
+  .advantages__main-title {
+    padding-left: 0; }
+  .services__main-title {
+    padding-left: 0; }
   .services__lines {
     bottom: 35%; }
   .services__circle {
@@ -1097,9 +1103,7 @@ img {
     top: 53.5%;
     left: 38.5%; }
   .advantages__main-title {
-    font-size: 1.8rem; }
-  .services__col {
-    width: 100%; }
+    font-size: 2.8rem; }
   .services__triangle {
     right: 3%; }
   .services__points {
@@ -1111,6 +1115,8 @@ img {
 
 @media screen and (max-height: 540px) {
   .hero__main {
+    display: none; }
+  .video__description {
     display: none; } }
 
 @media screen and (max-height: 400px) {
@@ -1119,4 +1125,8 @@ img {
 
 @media screen and (max-width: 400px) {
   .video__play {
-    left: 36.5%; } }
+    left: 36.5%; }
+  .advantages__description {
+    width: 256px; }
+  .services__col {
+    width: 100%; } }
