@@ -1119,7 +1119,9 @@ img {
   .hero__main {
     display: none; }
   .video__description {
-    display: none; } }
+    display: none; }
+  .video__background {
+    margin-top: 8.5rem; } }
 
 @media screen and (max-height: 400px) {
   .video__background {
