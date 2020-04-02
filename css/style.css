@@ -403,9 +403,7 @@ img {
     letter-spacing: 0.52px;
     text-align: left;
     color: #38393b;
-    margin-right: 197px;
-    background-color: rgba(227, 251, 221, 0.8);
-    border-radius: 20px; }
+    margin-right: 197px; }
   .header__information {
     display: flex; }
   .header__nav {
