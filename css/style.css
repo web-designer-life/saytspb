@@ -1126,11 +1126,17 @@ img {
   .video__description {
     display: none; }
   .video__background {
-    margin-top: 8.5rem; } }
+    margin-top: 8.5rem; }
+  .video__play {
+    top: 50.5%;
+    left: 44%; } }
 
 @media screen and (max-height: 400px) {
   .video__background {
-    margin-top: 15rem; } }
+    margin-top: 15rem; }
+  .video__play {
+    top: 60%;
+    left: 44%; } }
 
 @media screen and (max-width: 400px) {
   .video__play {
