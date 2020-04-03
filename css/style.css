@@ -1068,7 +1068,9 @@ img {
 
 @media screen and (max-width: 1083px) {
   html {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .hero__title {
+    max-width: 600px; } }
 
 @media screen and (max-width: 992px) {
   html {
