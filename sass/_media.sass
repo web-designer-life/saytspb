@@ -70,6 +70,10 @@
       bottom: 25%
   .row
     justify-content: space-around
+  .news
+    &__swiper-container
+      margin-left: 32px
+      margin-right: 32px
 @media screen and ( max-width: 1083px ) 
   html
     font-size: 13px
@@ -199,6 +203,9 @@
         left: 1rem
       &-next
         right: 1rem
+  .slide
+    &__information
+      bottom: 6rem
 @media screen and ( max-height: 768px )       
   .hero
     &__main
@@ -366,6 +373,10 @@
     &__play
       top: 50.5%
       left: 44%
+@media screen and ( max-width: 440px )
+  .news
+    &__swiper-container
+      height: 620px
 @media screen and ( max-height: 400px )
   .video
     &__background
@@ -383,3 +394,13 @@
   .services
     &__col
       width: 100%
+  .slide
+    &__information
+      padding: 1rem
+  .news
+    &__swiper-container
+      height: 500px
+    &__title
+      margin-bottom: 0.5rem
+    &__text
+      margin-bottom: 0.5rem

@@ -1156,6 +1156,145 @@ img {
   .swiper-button-next::after {
     display: none; }
 
+.news {
+  position: relative;
+  max-width: 1920px;
+  margin: auto;
+  padding-top: 2.92rem;
+  padding-bottom: 6.57rem;
+  background-color: #e3fbdd; }
+  .news__container {
+    max-width: 1170px;
+    text-align: center; }
+  .news__main-title {
+    padding: 0 32px;
+    font-size: 3rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: normal;
+    color: #2c2c2d;
+    margin: auto;
+    padding-top: 4.43rem;
+    margin-left: 1.6rem;
+    margin-bottom: 1.9rem;
+    text-align: center; }
+  .news__main-text {
+    font-size: 1.14rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2c2c2d;
+    margin: auto;
+    margin-bottom: 4.07rem;
+    max-width: 900px;
+    padding: 0 32px; }
+  .news__swiper-container {
+    max-width: 1170px;
+    height: 584px; }
+  .news__title {
+    font-size: 1.43rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    letter-spacing: normal;
+    text-align: left;
+    color: #121111;
+    margin-top: 0;
+    margin-bottom: 1.9rem; }
+  .news__text {
+    font-size: 1.14rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: normal;
+    text-align: left;
+    color: #201f1f;
+    max-width: 458px;
+    margin-top: 0;
+    margin-bottom: 2.7rem; }
+  .news__button {
+    padding: 1rem 4.1rem 1rem 4rem;
+    font-size: 1.14rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    margin: auto;
+    margin-left: 0; }
+  .news__prev {
+    top: auto;
+    left: 6px;
+    bottom: 2rem;
+    background: url("../img/news/prev.png") center no-repeat;
+    font-size: 56px;
+    width: 56px; }
+  .news__next {
+    top: auto;
+    bottom: 2rem;
+    background: url("../img/news/next.png") center no-repeat;
+    font-size: 56px;
+    width: 56px; }
+  .news__day {
+    font-size: 1.43rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff; }
+  .news__month {
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff; }
+
+.slide {
+  position: relative; }
+  .slide__main-photo {
+    position: absolute;
+    top: 0;
+    left: 3px; }
+  .slide__information {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2.57rem 3.71rem 2.79rem 2.9rem;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10.4px 2.6px rgba(34, 34, 34, 0.05); }
+  .slide__date {
+    position: absolute;
+    top: 1.71rem;
+    left: 1.5rem;
+    background-color: #ff5a3c;
+    padding: 0.8rem 1.07rem;
+    border-radius: 5px; }
+
+.swiper-container {
+  margin-bottom: 4.1rem; }
+
+.swiper-button-prev::after {
+  display: none; }
+
+.swiper-button-next::after {
+  display: none; }
+
 @media screen and (max-width: 1440px) {
   .hero__social {
     display: none; }
@@ -1219,7 +1358,10 @@ img {
   .services__circle {
     bottom: 25%; }
   .row {
-    justify-content: space-around; } }
+    justify-content: space-around; }
+  .news__swiper-container {
+    margin-left: 32px;
+    margin-right: 32px; } }
 
 @media screen and (max-width: 1083px) {
   html {
@@ -1334,7 +1476,9 @@ img {
   .swiper-button-prev {
     left: 1rem; }
   .swiper-button-next {
-    right: 1rem; } }
+    right: 1rem; }
+  .slide__information {
+    bottom: 6rem; } }
 
 @media screen and (max-height: 768px) {
   .hero__main {
@@ -1492,6 +1636,10 @@ img {
     top: 50.5%;
     left: 44%; } }
 
+@media screen and (max-width: 440px) {
+  .news__swiper-container {
+    height: 620px; } }
+
 @media screen and (max-height: 400px) {
   .video__background {
     margin-top: 15rem; }
@@ -1505,4 +1653,12 @@ img {
   .advantages__description {
     width: 256px; }
   .services__col {
-    width: 100%; } }
+    width: 100%; }
+  .slide__information {
+    padding: 1rem; }
+  .news__swiper-container {
+    height: 500px; }
+  .news__title {
+    margin-bottom: 0.5rem; }
+  .news__text {
+    margin-bottom: 0.5rem; } }

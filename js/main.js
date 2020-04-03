@@ -30,4 +30,9 @@ $(document).ready(function () {
     });
   });
 
+  var next = $('.news__next');
+  var prev = $('.news__prev');
+  
+  next.css('left', '80px');
+
 });
