@@ -1134,10 +1134,10 @@ img {
     text-align: left;
     margin: auto; }
   .clients__prev {
-    left: 0;
+    left: 1rem;
     top: 53%; }
   .clients__next {
-    right: 0;
+    right: 1rem;
     top: 53%; }
 
 .swiper-container {
