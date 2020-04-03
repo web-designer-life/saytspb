@@ -1066,6 +1066,10 @@ img {
   .row {
     justify-content: space-around; } }
 
+@media screen and (max-width: 1083px) {
+  html {
+    font-size: 13px; } }
+
 @media screen and (max-width: 992px) {
   html {
     font-size: 12px; }
@@ -1134,7 +1138,11 @@ img {
     bottom: 35%; }
   .services__circle {
     top: 30%;
-    left: 3%; } }
+    left: 3%; }
+  .swiper-button-prev {
+    left: 1rem; }
+  .swiper-button-next {
+    right: 1rem; } }
 
 @media screen and (max-height: 768px) {
   .hero__main {
@@ -1271,7 +1279,11 @@ img {
   .services__lines {
     bottom: 18%; }
   .services__circle {
-    top: 40%; } }
+    top: 40%; }
+  .swiper-button-prev {
+    left: 0.5rem; }
+  .swiper-button-next {
+    right: 0.5rem; } }
 
 @media screen and (max-height: 540px) {
   .hero__main {

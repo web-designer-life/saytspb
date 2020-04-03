@@ -64,6 +64,9 @@
       bottom: 25%
   .row
     justify-content: space-around
+@media screen and ( max-width: 1083px ) 
+  html
+    font-size: 13px
 @media screen and ( max-width: 992px ) 
   html
     font-size: 12px
@@ -144,6 +147,12 @@
     &__circle
       top: 30%
       left: 3%
+  .swiper
+    &-button
+      &-prev
+        left: 1rem
+      &-next
+        right: 1rem
 @media screen and ( max-height: 768px )       
   .hero
     &__main
@@ -288,6 +297,12 @@
       bottom: 18%
     &__circle
       top: 40%
+  .swiper
+    &-button
+      &-prev
+        left: 0.5rem
+      &-next
+        right: 0.5rem
 @media screen and ( max-height: 540px )       
   .hero
     &__main
