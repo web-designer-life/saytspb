@@ -336,6 +336,14 @@ template {
   .button::-moz-focus-inner {
     border: 0; }
 
+div.invalid {
+  position: absolute;
+  bottom: -1.4rem;
+  color: #ff5a3c; }
+
+input.invalid {
+  border-bottom: 1px solid #ff5a3c; }
+
 .container {
   max-width: 90%;
   margin: auto; }
@@ -863,6 +871,106 @@ img {
     text-align: left;
     color: #454646; }
 
+.price {
+  position: relative;
+  max-width: 1920px;
+  height: 755px;
+  margin: auto;
+  padding-top: 6.07rem;
+  margin-bottom: 5.21rem;
+  padding-bottom: 2.5rem; }
+  .price__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 755px;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .price__container {
+    max-width: 1170px;
+    height: 597px;
+    text-align: center;
+    background: url("../img/price/left-image.jpg"); }
+  .price__main-title {
+    padding: 0 32px;
+    font-size: 2.14rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: -0.5px;
+    word-spacing: 1px;
+    color: #2c2c2d;
+    margin: auto;
+    padding-top: 5.9rem;
+    margin-bottom: 3.2rem;
+    margin-left: 1rem;
+    text-align: center; }
+  .price__form {
+    max-width: 599px;
+    padding: 0 0 0 3.64rem;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 100%; }
+  .price__input-group {
+    position: relative;
+    margin-bottom: 1.6rem; }
+  .price__button {
+    font-size: 1.14rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 1.5rem;
+    margin-left: 0;
+    padding: 0.9rem 2.6rem 1rem 3rem; }
+
+.container {
+  position: relative; }
+  .container__image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1; }
+
+.form__label {
+  display: block;
+  font-size: 1.29rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.03;
+  letter-spacing: normal;
+  text-align: left;
+  color: #939292;
+  text-transform: uppercase; }
+
+.form__input {
+  padding: 0;
+  display: block;
+  width: 100%;
+  font-size: 1.29rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: normal;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #939497; }
+  .form__input::-webkit-input-placeholder {
+    color: #1e1e1e; }
+  .form__input::-moz-placeholder {
+    color: #1e1e1e; }
+  .form__input:-ms-input-placeholder {
+    color: #1e1e1e; }
+  .form__input::-ms-input-placeholder {
+    color: #1e1e1e; }
+  .form__input::placeholder {
+    color: #1e1e1e; }
+
 .cases {
   max-width: 1920px;
   margin: auto; }
@@ -1360,7 +1468,9 @@ img {
     justify-content: space-around; }
   .news__swiper-container {
     margin-left: 32px;
-    margin-right: 32px; } }
+    margin-right: 32px; }
+  .price__container {
+    margin: 0 32px; } }
 
 @media screen and (max-width: 1083px) {
   html {
@@ -1380,7 +1490,9 @@ img {
     top: 53%; }
   .clients__next {
     right: 1rem;
-    top: 53%; } }
+    top: 53%; }
+  .price__main-title {
+    padding-top: 8rem; } }
 
 @media screen and (max-width: 992px) {
   html {
@@ -1434,7 +1546,9 @@ img {
   .clients__lines {
     left: 5.5%;
     top: 80%;
-    width: 30%; } }
+    width: 30%; }
+  .price__main-title {
+    padding-top: 10rem; } }
 
 @media screen and (max-width: 773px) {
   .services__triangle {
@@ -1482,6 +1596,19 @@ img {
 @media screen and (max-height: 768px) {
   .hero__main {
     width: 30%; } }
+
+@media screen and (max-width: 720px) {
+  .price__form {
+    margin-right: 3.64rem; }
+  .price {
+    height: 630px; }
+    .price__background {
+      min-height: 630px; }
+    .price__container {
+      height: 480px;
+      border-radius: 20px; }
+    .price__main-title {
+      padding-top: 5rem; } }
 
 @media screen and (max-height: 600px) {
   .hero__multiply {
@@ -1635,6 +1762,12 @@ img {
     top: 50.5%;
     left: 44%; } }
 
+@media screen and (max-width: 450px) {
+  .price__form {
+    padding: 0;
+    width: 90%;
+    margin: auto; } }
+
 @media screen and (max-width: 440px) {
   .news__swiper-container {
     height: 620px; } }
@@ -1661,3 +1794,7 @@ img {
     margin-bottom: 0.5rem; }
   .news__text {
     margin-bottom: 0.5rem; } }
+
+@media screen and (max-width: 392px) {
+  .price__main-title {
+    padding-top: 4rem; } }

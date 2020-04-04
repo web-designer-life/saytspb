@@ -2,8 +2,9 @@
 
 $userName = $_POST['userName'];
 $userEmail = $_POST['userEmail'];
+$userAddress = $_POST['userAddress'];
 $userPhone = $_POST['userPhone'];
-$userQuestion = $_POST['userQuestion'];
+$userMessange = $_POST['userMessange'];
 
 // Load Composer's autoloader
 require 'phpmailer/Exception.php';
@@ -26,16 +27,17 @@ try {
     $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('himynameisantony@gmail.com', 'Антон');
+    $mail->setFrom('himynameisantony@gmail.com', 'Пользователь');
     $mail->addAddress('io57196657@gmail.com');     // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Новая заявка сайта';
+    $mail->Subject = 'Новая заявка';
     $mail->Body    = "Имя пользователя: ${userName};
                       Телефон: ${userPhone};
+                      Адрес веб-сайта: ${userPhone};
                       Почтовый ящик: ${userEmail};
-                      Вопрос: ${userQuestion}.";
+                      Сообщение: ${userMessange}.";
 
     if ($mail->send()) {
         echo "ok";

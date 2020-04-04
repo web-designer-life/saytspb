@@ -200,6 +200,34 @@
       <!-- /.container -->
     </section>
     <!-- /.services -->
+    <section class="price">
+      <img class="price__background" src="img/price/bg.jpg" alt="background">
+      <div class="container price__container">
+        <form action="send.php" method="POST" class="form price__form">
+          <h2 class="price__main-title">Узнать стоимость</h2>
+          <div class="input-group price__input-group">
+            <label class="label form__label label--light">Имя</label>
+            <input type="text" name="userName" autocomplete="off" class="input form__input price__input input--light" id="price-user-name" placeholder="Иван Иванов">
+          </div>
+          <div class="input-group price__input-group">
+            <label class="label form__label label--light">E mail</label>
+            <input type="email" name="userEmail" autocomplete="off" class="input form__input price__input input--light" id="price-user-email" placeholder="ivanov@gmail.com">
+          </div>
+          <div class="input-group price__input-group">
+            <label class="label form__label label--light">Адрес веб-сайта</label>
+            <input type="url" name="userAddress" autocomplete="off" class="input form__input price__input input--light" id="price-user-address" placeholder="tatsianapavlenko.ru">
+          </div>
+          <div class="input-group price__input-group">
+            <label class="label form__label label--light">Сообщение</label>
+            <input type="text" name="userMessange" autocomplete="off" class="input form__input price__input input--light" id="price-user-messange" placeholder="Введите Ваше сообщение">
+          </div>
+          <!-- /.police -->
+          <button class="button button--primary price__button">Узнать стоимость</button>
+        </form>
+        <img class="container__image" src="img/price/left-image.png" alt="left-image">
+      </div>
+    </section>
+    <!-- /.price -->
     <section class="cases">
       <div class="container cases__container">
         <h2 class="cases__main-title">Наши Кейсы</h2>
@@ -463,6 +491,8 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
