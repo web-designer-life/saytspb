@@ -1010,7 +1010,7 @@ img {
   position: relative;
   max-width: 1920px;
   margin: auto;
-  padding-top: 2.92rem; }
+  padding-top: 5.21rem; }
   .clients__multiply {
     position: absolute;
     left: 8.2%;
@@ -1160,8 +1160,7 @@ img {
   position: relative;
   max-width: 1920px;
   margin: auto;
-  padding-top: 2.92rem;
-  padding-bottom: 6.57rem;
+  padding-bottom: 2.5rem;
   background-color: #e3fbdd; }
   .news__container {
     max-width: 1170px;
