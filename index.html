@@ -14,8 +14,10 @@
     <div class="container header__container">
       <div class="header__menu">
         <div class="logo header__logo">
-          <img src="img/header/logo.png" alt="logo">
-          <a class="logo__link" href="#">SAYTSPB</a>
+          <a href="#">
+            <img class="logo__img" src="img/header/logo.png" alt="logo">
+          </a>
+          <a class="logo__link" href="#">Saytspb</a>
         </div>
         <div class="header__information">
           <nav class="nav header__nav">
@@ -488,6 +490,47 @@
     </section>
     <!-- /.news -->
   </main>
+  <footer id="footer" class="footer">
+    <div class="container footer__container">
+      <div class="footer__wrap">
+        <div class="footer__title">Остались вопросы?</div>
+        <form action="send.php" method="POST" class="form footer__form">
+          <div class="input-group footer__input-group">
+            <label class="label form__label label--light footer__label">Имя</label>
+            <input name="userName" type="text" class="input form__input footer__input input--light" id="footer-user-name" autocomplete="off" placeholder="Как вас зовут:">
+          </div>
+          <div class="input-group footer__input-group">
+            <label class="label form__label label--light footer__label">Телефон</label>
+            <input name="userPhone" type="tel" class="input form__input footer__input input--light" id="footer-user-phone" autocomplete="off" placeholder="Ваш номер телефона:">
+          </div>
+          <div class="input-group footer__input-group footer__input-group--full-width">
+            <label class="label form__label label--light footer__label">Вопрос</label>
+            <input name="userQuestion" type="text" class="input form__input footer__input input--light" id="user-question" autocomplete="off" placeholder="Я хочу спросить:">
+          </div>
+          <div class="policy footer__policy">
+            <div class="policy__content">
+              <input type="checkbox" class="footer__policy__checkbox" name="policyCheckbox" id="footer__policy__checkbox" checked>
+              <label for="footer__policy__checkbox" class="footer__policy__label policy__label policy__label--center footer__label">Я соглашаюсь на обработку данных</label>
+            </div>
+          </div>
+          <!-- /.police -->
+          <button class="button button--primary footer__button">Отправить</button>
+        </form>
+        <!-- /.form footer__form -->
+      </div>
+      <!-- /.footer__wrap -->
+    </div>
+    <div class="information footer__information">
+      <div class="container information__container">
+        <a href="#">
+          <img class="information__img" src="img/footer/logo.png" alt="logo">
+        </a>
+        <a class="information__link" href="#">Saytspb</a>
+        <p class="information__author">Glo Academy</p>
+        <p class="information__rules">Copyright © 2019. Все права защищены</p>
+      </div>
+    </div>
+  </footer>
   <div class="success" id="success2" tabindex="0">
     <div class="success__dialog">
       <button class="success__close"></button>

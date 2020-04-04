@@ -444,6 +444,12 @@ img {
     cursor: pointer;
     color: #838589; }
 
+.logo__img {
+  transition: 0.3s; }
+  .logo__img:hover {
+    cursor: pointer;
+    opacity: 0.7; }
+
 .nav__item {
   position: relative;
   text-decoration: none;
@@ -1402,6 +1408,80 @@ img {
 .swiper-button-next::after {
   display: none; }
 
+.footer__information {
+  max-width: 1920px;
+  margin: auto;
+  height: 22.86rem;
+  background-image: url("../img/footer/points-bg.png"); }
+
+.information__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  max-width: 866px; }
+  .information__container::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    bottom: 8.21rem;
+    width: 100%;
+    height: 1px;
+    background-color: #3c3a3a; }
+
+.information__img {
+  width: 58px;
+  margin-top: 4.64rem;
+  margin-bottom: 0.8rem;
+  transition: 0.3s; }
+  .information__img:hover {
+    cursor: pointer;
+    opacity: 0.7; }
+
+.information__link {
+  font-size: 1.86rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.73;
+  letter-spacing: 0.52px;
+  text-align: left;
+  color: #38393b;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s; }
+  .information__link:hover {
+    cursor: pointer;
+    color: #838589; }
+
+.information__author {
+  position: absolute;
+  margin: 0;
+  bottom: 8.6rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.73;
+  letter-spacing: 0.52px;
+  text-align: left;
+  color: #38393b; }
+
+.information__rules {
+  position: absolute;
+  bottom: 2.9rem;
+  padding-left: 2rem;
+  margin: 0;
+  font-size: 1.14rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #151515; }
+
 .success {
   outline: none;
   position: fixed;
@@ -1601,7 +1681,12 @@ img {
     top: 80%;
     width: 30%; }
   .price__main-title {
-    padding-top: 10rem; } }
+    padding-top: 10rem; }
+  .information__container::after {
+    width: 90%;
+    margin: auto; }
+  .information__rules {
+    padding-left: 0; } }
 
 @media screen and (max-width: 773px) {
   .services__triangle {
