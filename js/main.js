@@ -1,6 +1,56 @@
 var menuButton = document.querySelector('.burger__menu-button');
 var menu = document.querySelector('.header__information');
 $(document).ready(function () {
+  var modal = $('.modal'),
+      success = $('.success'),
+      modalBtn = $('[data-toggle=modal]'),
+      closeBtn = $('.modal__close'),
+      successBtn = $('[data-toggle=success]'),
+      close = $('.success__close'),
+      input = $('.modal input[type=text]'),
+      switchModal = function() {
+        modal.toggleClass('modal--visible'),
+        input.focus();   
+      },
+      switchSuccess = function() {
+        success.toggleClass('success--visible');
+      };
+
+  modalBtn.on('click', switchModal);
+
+  closeBtn.on('click', function () {
+    modal.removeClass('modal--visible');
+  });
+
+  modal.keyup(function(event) {
+      if (event.key === 'Escape') {
+        modal.removeClass('modal--visible');
+      }
+  });
+  
+  modal.on('click', function (event) {
+    if (modal.has(event.target).length == 0) {
+      modal.toggleClass('modal--visible');
+    }
+  });
+
+  successBtn.on('click', switchSuccess);
+
+  close.on('click', function () {
+    success.removeClass('success--visible');
+  });
+
+  success.keyup(function(event) {
+      if (event.key === 'Escape') {
+        success.removeClass('success--visible');
+      }
+  });
+  
+  success.on('click', function (event) {
+    if (success.has(event.target).length == 0) {
+      success.toggleClass('success--visible');
+    }
+  });
 
   menuButton.addEventListener('click', function() {
     menuButton.classList.toggle('burger__menu-button--active'); 
@@ -80,8 +130,7 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
-          $(form)[0].reset();ym(61354918, 'reachGoal', 'form');
-          modal.toggleClass('modal--visible');
+          $(form)[0].reset();
           success.toggleClass('success--visible'); return true;
         },
         error: function(response) {

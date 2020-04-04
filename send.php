@@ -35,12 +35,12 @@ try {
     $mail->Subject = 'Новая заявка';
     $mail->Body    = "Имя пользователя: ${userName};
                       Телефон: ${userPhone};
-                      Адрес веб-сайта: ${userPhone};
+                      Адрес веб-сайта: ${userAddress};
                       Почтовый ящик: ${userEmail};
                       Сообщение: ${userMessange}.";
 
     if ($mail->send()) {
-        echo "ok";
+        echo "Письмо отправлено.";
     } else {
         echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
     }
