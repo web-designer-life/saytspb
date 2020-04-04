@@ -140,7 +140,55 @@ $(document).ready(function () {
     }
   });
 
+  $('.footer__form').validate({
+    errorClass: "invali",
+    ignore: ":disabled",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      // правило-объект (блок)
+      userEmail: {
+        required: true,
+        email: true
+      },
+      userPhone: "required",
+      userMessange: "required"
+    }, // сообщения
+    errorElement: 'div',
+    messages: {
+      userName: {
+        required: "Заполните поле: Имя",
+        minlength: "Имя должно быть не короче 2 букв",
+        maxlength: "Имя может иметь максимум 15 букв"
+      },
+      userEmail: {
+        required: "Заполните поле: Email",
+        email: "Введите корректный email"
+      },
+      userPhone: "Заполните поле: Телефон",
+      userMessange: "Заполните поле: Сообщение"
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          success.toggleClass('success--visible'); return true;
+        },
+        error: function(response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
+    }
+  });
+
   //маска для телефона
-  $('[type=tel]').mask('+7 (999) 999-99-99');
+  $('[type=tel]').mask('+7(000) 000-00-00');
 
 });

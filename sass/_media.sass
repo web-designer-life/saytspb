@@ -53,6 +53,12 @@
     &__play
       top: 60.5%
       left: 47%
+  .footer
+    &__col
+      margin-left: 2.29rem
+    &__form
+      width: 70%
+      margin-left: 2rem
 @media screen and ( max-width: 1234px ) 
   .hero 
     &__content
@@ -77,6 +83,17 @@
   .price
     &__container
       margin: 0 32px
+  .footer
+    &__row
+      justify-content: flex-start
+@media screen and ( max-width: 1150px ) 
+  .footer
+    &__col
+      margin-left: 2.1rem
+      margin-right: 2.1rem
+    &__form
+      width: 90%
+      margin-left: 1rem
 @media screen and ( max-width: 1083px ) 
   html
     font-size: 13px
@@ -101,6 +118,37 @@
   .price
     &__main-title
       padding-top: 8rem
+  .footer
+    &__container
+      height: 526px
+    &__left
+      display: none
+    &__row
+      justify-content: space-around
+@media screen and ( max-width: 1071px ) 
+  .footer
+    &::before
+      display: none 
+    &__line
+      transform: rotate(90deg)
+      top: 30%
+      left: 40%
+    &__container
+      height: auto
+    &__left
+      display: none
+    &__row
+      justify-content: space-around
+    &__col
+      margin-top: 2rem
+      margin: 0
+      padding: 32px
+    &__form
+      background-color: $primary
+      border-radius: 20px
+      padding: 32px
+      margin: 0
+      width: 100%
 @media screen and ( max-width: 992px ) 
   html
     font-size: 12px
@@ -170,6 +218,11 @@
         margin: auto
     &__rules
       padding-left: 0
+@media screen and ( max-width: 961px )   
+  .footer
+    &__line
+      width: 30%
+      left: -9%
 @media screen and ( max-width: 773px )       
   .services
     &__triangle
@@ -251,6 +304,9 @@
       background: none
     &__col
       width: 90%
+  .footer
+    &__line
+      left: -12%
 @media screen and ( max-width: 540px )       
   .header
     &__information
@@ -412,10 +468,25 @@
       padding: 0
       width: 90%
       margin: auto
-@media screen and ( max-width: 440px )
+@media screen and ( max-width: 441px )
   .news
     &__swiper-container
       height: 620px
+  .footer
+    &__line
+      left: 60%
+      top: 32%
+      transform: rotate(45deg)
+    &__subtitle
+      margin-left: 0
+    &__description
+      &--second
+        margin-left: 0
+    &__col
+      padding: 16px 32px
+  .box
+    &__col
+      width: 100%
 @media screen and ( max-height: 400px )
   .video
     &__background
@@ -447,3 +518,6 @@
   .price
     &__main-title
       padding-top: 4rem
+  .footer
+    &__line
+      top: 34%

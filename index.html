@@ -212,7 +212,7 @@
             <input type="text" name="userName" autocomplete="off" class="input form__input price__input input--light" id="price-user-name" placeholder="Иван Иванов">
           </div>
           <div class="input-group price__input-group">
-            <label class="label form__label label--light">E mail</label>
+            <label class="label form__label label--light">E-mail</label>
             <input type="email" name="userEmail" autocomplete="off" class="input form__input price__input input--light" id="price-user-email" placeholder="ivanov@gmail.com">
           </div>
           <div class="input-group price__input-group">
@@ -491,34 +491,58 @@
     <!-- /.news -->
   </main>
   <footer id="footer" class="footer">
+    <div class="footer__line"><img src="img/footer/line.png" alt="line"></div>
+    <div class="footer__left"><img src="img/footer/left.png" alt="left"></div>
     <div class="container footer__container">
-      <div class="footer__wrap">
-        <div class="footer__title">Остались вопросы?</div>
-        <form action="send.php" method="POST" class="form footer__form">
-          <div class="input-group footer__input-group">
-            <label class="label form__label label--light footer__label">Имя</label>
-            <input name="userName" type="text" class="input form__input footer__input input--light" id="footer-user-name" autocomplete="off" placeholder="Как вас зовут:">
-          </div>
-          <div class="input-group footer__input-group">
-            <label class="label form__label label--light footer__label">Телефон</label>
-            <input name="userPhone" type="tel" class="input form__input footer__input input--light" id="footer-user-phone" autocomplete="off" placeholder="Ваш номер телефона:">
-          </div>
-          <div class="input-group footer__input-group footer__input-group--full-width">
-            <label class="label form__label label--light footer__label">Вопрос</label>
-            <input name="userQuestion" type="text" class="input form__input footer__input input--light" id="user-question" autocomplete="off" placeholder="Я хочу спросить:">
-          </div>
-          <div class="policy footer__policy">
-            <div class="policy__content">
-              <input type="checkbox" class="footer__policy__checkbox" name="policyCheckbox" id="footer__policy__checkbox" checked>
-              <label for="footer__policy__checkbox" class="footer__policy__label policy__label policy__label--center footer__label">Я соглашаюсь на обработку данных</label>
+      <div class="row footer__row">
+        <div class="col footer__col">
+          <div class="row data footer__data">
+            <div class="col">
+              <h2 class="footer__main-title">Остались вопросы?<br>Напишите нам!<br>Отправте Ваше сообщение через форму или <a href="#" class="footer__link">e-mail</a>.</h2>
+            </div>
+            <div class="col">
+              <div class="box footer__box">
+                <div class="col box__col">
+                  <h3 class="footer__title">Адресс</h3>
+                  <p class="footer__description">Город Санкт-Петербург</p>
+                  <p class="footer__description">Улица Мурзинская дом 11</p>
+                  <p class="footer__description">+7(812)-992-10-30</p>
+                  <p class="footer__description">info@saytspb.ru</p>
+                </div>
+                <div class="col box__col">
+                  <h4 class="footer__subtitle">Рабочие дни</h4>
+                  <p class="footer__description footer__description--second">Понедельник-Пятница</p>
+                  <h4 class="footer__subtitle">Выходные</h4>
+                  <p class="footer__description footer__description--second">Суббота-Воскресенье</p>
+                  <h4 class="footer__subtitle">09:00-18:00</h4>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- /.police -->
-          <button class="button button--primary footer__button">Отправить</button>
-        </form>
-        <!-- /.form footer__form -->
+        </div>
+        <div class="col footer__col">
+          <form action="send.php" method="POST" class="form footer__form">
+            <div class="input-group footer__input-group">
+              <label class="label footer__label form__label label--light">Имя</label>
+              <input type="text" name="userName" autocomplete="off" class="input form__input footer__input input--light" id="footer-user-name" placeholder="Иван Иванов">
+            </div>
+            <div class="input-group footer__input-group">
+              <label class="label footer__label form__label label--light">E-mail</label>
+              <input type="email" name="userEmail" autocomplete="off" class="input form__input footer__input input--light" id="footer-user-email" placeholder="ivanov@gmail.com">
+            </div>
+            <div class="input-group footer__input-group">
+              <label class="label footer__label form__label label--light">Телефон</label>
+              <input type="tel" name="userPhone" autocomplete="off" class="input form__input footer__input input--light" id="footer-user-phone" placeholder="+7 999 888-88-88">
+            </div>
+            <div class="input-group footer__input-group">
+              <label class="label footer__label form__label label--light">Сообщение</label>
+              <input type="text" name="userMessange" autocomplete="off" class="input form__input footer__input input--light" id="footer-user-messange" placeholder="Введите Ваше сообщение">
+            </div>
+            <!-- /.police -->
+            <button class="button button--primary footer__button">Отправить</button>
+          </form>
+        </div>
       </div>
-      <!-- /.footer__wrap -->
     </div>
     <div class="information footer__information">
       <div class="container information__container">
