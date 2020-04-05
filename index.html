@@ -28,7 +28,7 @@
           </nav>
           <div class="contacts header__contacts">
             <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
-            <button class="button contacts__button button--primary">Заказать звонок</button>
+            <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@
         <a href="viber://chat?number=+78129921030" class="social__link">
           <img src="img/hero/viber.png" alt="viber">
         </a>
-        <a href="mailto:someone@yoursite.com" class="social__link">
+        <a href="mailto:info@saytspb.ru" class="social__link">
           <img src="img/hero/mail.png" alt="mail">
         </a>
       </div>
@@ -363,7 +363,7 @@
       <div class="clients__lines"><img src="img/clients/lines.png" alt="lines"></div>
       <div class="container clients__container">
         <h2 class="clients__main-title">Отзывы клиентов</h2>
-        <p class="clients__main-text">Если Вы хотите оставить отзыв о проделаной работе, какие-нибудь пожелания или свои впечатления, то можете это сделать, написав на <a class="clients__reference" href="mailto:someone@yoursite.com">почту</a> или <a class="clients__reference" href="https://vk.com/prodvijenie_saitov__spb">Вконтакте</a></p>
+        <p class="clients__main-text">Если Вы хотите оставить отзыв о проделаной работе, какие-нибудь пожелания или свои впечатления, то можете это сделать, написав на <a class="clients__reference" href="mailto:info@saytspb.ru">почту</a> или <a class="clients__reference" href="https://vk.com/prodvijenie_saitov__spb">Вконтакте</a></p>
         <div class="swiper-container clients__swiper-container">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper swiper-no-swiping">
@@ -498,7 +498,7 @@
         <div class="col footer__col">
           <div class="row data footer__data">
             <div class="col">
-              <h2 class="footer__main-title">Остались вопросы?<br>Напишите нам!<br>Отправте Ваше сообщение через форму или <a href="#" class="footer__link">e-mail</a>.</h2>
+              <h2 class="footer__main-title">Остались вопросы?<br>Напишите нам!<br>Отправте Ваше сообщение через форму или <a href="mailto:info@saytspb.ru" class="footer__link">e-mail</a>.</h2>
             </div>
             <div class="col">
               <div class="box footer__box">
@@ -506,8 +506,12 @@
                   <h3 class="footer__title">Адресс</h3>
                   <p class="footer__description">Город Санкт-Петербург</p>
                   <p class="footer__description">Улица Мурзинская дом 11</p>
-                  <p class="footer__description">+7(812)-992-10-30</p>
-                  <p class="footer__description">info@saytspb.ru</p>
+                  <a href="tel:+78129921030" class="footer__phone">
+                    <p class="footer__description">+7(812)-992-10-30</p>
+                  </a>
+                  <a href="mailto:info@saytspb.ru" class="footer__mail">
+                    <p class="footer__description">info@saytspb.ru</p>
+                  </a>
                 </div>
                 <div class="col box__col">
                   <h4 class="footer__subtitle">Рабочие дни</h4>
@@ -555,6 +559,24 @@
       </div>
     </div>
   </footer>
+  <div class="modal" id="modal2" tabindex="0">
+    <div class="modal__dialog">
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-group modal__input-group">
+          <label class="label modal__label form__label label--light">Имя</label>
+          <input type="text" name="userName" autocomplete="off" class="input form__input modal__input input--light" id="modal-user-name" placeholder="Ваше имя">
+        </div>
+        <div class="input-group modal__input-group">
+          <label class="label modal__label form__label label--light">Телефон</label>
+          <input type="tel" name="userPhone" autocomplete="off" class="input form__input modal__input input--light" id="modal-user-phone" placeholder="Ваш номер телефона">
+        </div>
+        <button class="button button--primary modal__button">Отправить</button>
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
   <div class="success" id="success2" tabindex="0">
     <div class="success__dialog">
       <button class="success__close"></button>

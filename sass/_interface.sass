@@ -9,7 +9,6 @@
     border: none
     background-color: $primary
     color: $light
-    transition: box-shadow 0.3s
     border: 2px solid $primary
     transition: 0.3s
     &:hover
@@ -34,14 +33,19 @@ div
     position: absolute
     bottom: -1.4rem
     color: $primary
-input
-  &.invalid
-    border-bottom: 1px solid $primary
-div
   &.invali
     position: absolute
     bottom: -1.4rem
     color: darken($light, 15%)
+  &.inval
+    position: absolute
+    bottom: -1.2rem
+    left: 1.3rem
+    color: $primary
 input
+  &.invalid
+    border-bottom: 1px solid $primary
   &.invali
     border-bottom: 1px solid darken($light, 15%)
+  &.inval
+    border: 1px solid $primary

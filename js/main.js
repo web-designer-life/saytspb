@@ -86,6 +86,44 @@ $(document).ready(function () {
   next.css('left', '80px');
 
   //Валидация формы
+  $('.modal__form').validate({
+    errorClass: "inval",
+    ignore: ":disabled",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required"
+    }, // сообщения
+    errorElement: 'div',
+    messages: {
+      userName: {
+        required: "Заполните поле: Имя",
+        minlength: "Имя должно быть не короче 2 букв",
+        maxlength: "Имя может иметь максимум 15 букв"
+      },
+      userPhone: "Заполните поле: Телефон"
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          modal.toggleClass('modal--visible');
+          success.toggleClass('success--visible'); return true;
+        },
+        error: function(response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
+    }
+  });
+
   $('.price__form').validate({
     errorClass: "invalid",
     ignore: ":disabled",
