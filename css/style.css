@@ -360,6 +360,22 @@ input.invali {
 input.inval {
   border: 1px solid #ff5a3c; }
 
+.scrollup {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  opacity: 0.6;
+  bottom: 16px;
+  right: 16px;
+  display: none;
+  text-indent: -9999px;
+  background: url("../img/icon_top.png") no-repeat;
+  color: #fff;
+  z-index: 10000000;
+  transition: 0.3s; }
+  .scrollup:hover {
+    opacity: 0.4; }
+
 .container {
   max-width: 90%;
   margin: auto; }
@@ -731,8 +747,8 @@ img {
     top: -14px; }
 
 .advantages {
-  margin-top: 6.43rem;
-  padding: 32px; }
+  padding: 32px;
+  padding-top: 6.43rem; }
   .advantages__container {
     max-width: 1170px;
     display: flex;
@@ -799,6 +815,7 @@ img {
   position: relative;
   max-width: 1920px;
   margin: auto;
+  margin-bottom: 9.86rem;
   padding: 32px; }
   .services__circle {
     position: absolute;
@@ -822,6 +839,7 @@ img {
     z-index: -1; }
   .services__container {
     max-width: 1170px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -999,7 +1017,8 @@ img {
 
 .cases {
   max-width: 1920px;
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 14px; }
   .cases__container {
     max-width: 1170px;
     margin-top: 8.07rem;
@@ -1068,6 +1087,7 @@ img {
     font-style: normal;
     letter-spacing: normal;
     text-align: left;
+    text-decoration: none;
     margin: auto; }
   .cases__title--first {
     font-size: 1.29rem;
@@ -1144,7 +1164,8 @@ img {
   position: relative;
   max-width: 1920px;
   margin: auto;
-  padding-top: 5.21rem; }
+  padding-top: 5.21rem;
+  margin-bottom: 5.64rem; }
   .clients__multiply {
     position: absolute;
     left: 8.2%;
@@ -1267,7 +1288,7 @@ img {
     letter-spacing: normal;
     text-align: left;
     margin: auto;
-    margin-bottom: 5.64rem; }
+    text-decoration: none; }
   .clients__prev {
     left: 0;
     top: 53%; }
@@ -1360,6 +1381,7 @@ img {
     font-style: normal;
     letter-spacing: normal;
     text-align: left;
+    text-decoration: none;
     margin: auto;
     margin-left: 0; }
   .news__prev {

@@ -6,6 +6,7 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css"><link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>SAYTSPB</title>
 </head>
@@ -14,17 +15,17 @@
     <div class="container header__container">
       <div class="header__menu">
         <div class="logo header__logo">
-          <a href="#">
+          <a href="#hero">
             <img class="logo__img" src="img/header/logo.png" alt="logo">
           </a>
-          <a class="logo__link" href="#">Saytspb</a>
+          <a class="logo__link" href="#hero">Saytspb</a>
         </div>
         <div class="header__information">
           <nav class="nav header__nav">
-            <a href="#" class="nav__item">Продвижение</a>
-            <a href="#" class="nav__item">Аудит</a>
-            <a href="#" class="nav__item">Цены</a>
-            <a href="#" class="nav__item">Контакты</a>
+            <a href="#advantages" class="nav__item">Продвижение</a>
+            <a href="#services" class="nav__item">Аудит</a>
+            <a href="#price" class="nav__item">Цены</a>
+            <a href="#footer" class="nav__item">Контакты</a>
           </nav>
           <div class="contacts header__contacts">
             <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
@@ -43,11 +44,11 @@
   <main>
     <section id="hero" class="hero">
       <div class="hero__start"><img src="img/hero/start-bg.png" alt="start-image"></div>
-      <div class="hero__multiply"><img src="img/hero/multiply.png" alt="multiply"></div>
-      <div class="hero__line"><img src="img/hero/line-bg.png" alt="line"></div>
+      <div class="hero__multiply wow rotateIn"><img src="img/hero/multiply.png" alt="multiply"></div>
+      <div class="hero__line wow rotateInDownRight"><img src="img/hero/line-bg.png" alt="line"></div>
       <div class="hero__seo"><img src="img/hero/SEO.png" alt="SEO"></div>
       <div class="hero__lines"><img src="img/hero/lines-bg.png" alt="lines"></div>
-      <div class="hero__main"><img src="img/hero/main-bg.png" alt="main-image"></div>
+      <div class="hero__main wow zoomIn"><img src="img/hero/main-bg.png" alt="main-image"></div>
       <div class="social hero__social">
         <a href="https://wa.me/78129921030" class="social__link">
           <img src="img/hero/whatsapp.png" alt="whatsapp">
@@ -72,7 +73,7 @@
     <section class="video">
       <div class="box video__box">
         <div class="container video__container">
-          <div class="video__description">
+          <div class="video__description wow zoomIn">
             <div class="col-25">
               <h2 class="video__number">11</h2>
               <span class="video__text">Лет на рынке</span>
@@ -94,38 +95,38 @@
         <!-- /.container -->
         <img class="video__background" src="img/video/video-bg.jpg" alt="video-bg">
       </div>
-      <a data-fancybox href="https://www.youtube.com/watch?v=5qap5aO4i9A" class="play video__play">
+      <a data-fancybox href="https://www.youtube.com/watch?v=5qap5aO4i9A" data-wow-duration="5s" class="play video__play wow bounceIn">
         <img class="play__img" src="img/video/play.svg" alt="play">
       </a>
     </section>
     <!-- /.section video -->
-    <section class="advantages">
+    <section id="advantages" class="advantages">
       <div class="container advantages__container">
-        <h2 class="advantages__main-title">Наши Преимущества</h2>
-        <p class="advantages__text">Профессиональный подход - расплывчатая формулировка, которой давно не принято доверять. Лучший способ рекламы - благоприятные отзывы заказчиков и практические примеры работ, которые представлены ниже. </p>
+        <h2 class="advantages__main-title wow zoomIn">Наши Преимущества</h2>
+        <p class="advantages__text wow zoomIn">Профессиональный подход - расплывчатая формулировка, которой давно не принято доверять. Лучший способ рекламы - благоприятные отзывы заказчиков и практические примеры работ, которые представлены ниже. </p>
         <div class="row">
-          <div class="col-33 advantages__col">
+          <div class="col-33 advantages__col wow fadeInLeft">
             <div class="advantages__image">
               <img src="img/advantages/icon-1.png" alt="">
             </div>
             <h3 class="advantages__title">Работа без предоплаты</h3>
             <span class="advantages__description">Оплата исключительно по факту результатов месячного сотрудничества.</span>
           </div>
-          <div class="col-33 advantages__col">
+          <div class="col-33 advantages__col wow fadeInLeft">
             <div class="advantages__image">
               <img src="img/advantages/icon-2.png" alt="">
             </div>
             <h3 class="advantages__title">Идивидуальный подход</h3>
             <span class="advantages__description">Возможность сотрудничества по типовым алгоритмам или с совместной разработкой индивидуального проекта SEO-продвижения.</span>
           </div>
-          <div class="col-33 advantages__col">
+          <div class="col-33 advantages__col wow fadeInLeft">
             <div class="advantages__image">
               <img src="img/advantages/icon-3.png" alt="">
             </div>
             <h3 class="advantages__title">Готовые решения</h3>
             <span class="advantages__description">Готовые решения для различных ресурсов, от узкоспециализированных торговых площадок до масштабных коммерческих проектов.</span>
           </div>
-          <div class="col-33 advantages__col">
+          <div class="col-33 advantages__col wow fadeInLeft">
             <div class="advantages__image">
               <img src="img/advantages/icon-4.png" alt="">
             </div>
@@ -133,19 +134,19 @@
             <span class="advantages__description">Глубокий анализ целевой аудитории 
               и статегии развития прямых конкурентов.</span>
           </div>
-          <div class="col-33 advantages__col">
+          <div class="col-33 advantages__col wow fadeInLeft">
             <div class="advantages__image">
               <img src="img/advantages/icon-5.png" alt="">
             </div>
             <h3 class="advantages__title">Актуализация ресурса</h3>
             <span class="advantages__description">Актуализация ресурса по мере корректировки поисковых алгоритмов.</span>
           </div>
-          <div class="col-33 advantages__col">
+          <div class="col-33 advantages__col wow fadeInLeft">
             <div class="advantages__image">
               <img src="img/advantages/icon-6.png" alt="">
             </div>
             <h3 class="advantages__title">Ежемесячные отчеты</h3>
-            <span class="advantages__description">Ежемесячные отчёты о предпринятых усилиях и практических результатах.</span>
+            <span id="services" class="advantages__description">Ежемесячные отчёты о предпринятых усилиях и практических результатах.</span>
           </div>
         </div>
       </div>
@@ -153,43 +154,43 @@
     </section>
     <!-- /.advantages -->
     <section class="services">
-      <div class="container services__container">
-      <div class="services__circle"><img src="img/services/circle.png" alt="circle"></div>
+      <div class="services__container">
+      <div class="services__circle wow bounce"><img src="img/services/circle.png" alt="circle"></div>
       <div class="services__points"><img src="img/services/points.png" alt="points"></div>
       <div class="services__lines"><img src="img/services/lines.png" alt="lines"></div>
-      <div class="services__triangle"><img src="img/services/triangle.png" alt="triangle"></div>
-        <h2 class="services__main-title">Наши Услуги</h2>
-        <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex</p>
+      <div class="services__triangle wow rotateInDownRight"><img src="img/services/triangle.png" alt="triangle"></div>
+        <h2 class="services__main-title wow zoomIn">Наши Услуги</h2>
+        <p class="services__text wow zoomIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex</p>
         <div class="row services__row">
-          <div class="services__col">
+          <div class="services__col wow pulse">
             <div class="services__image">
               <img src="img/services/icon-1.png" alt="">
             </div>
             <h3 class="services__title">Продвижение Сайтов</h3>
             <span class="services__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</span>
           </div>
-          <div class="services__col">
+          <div class="services__col wow pulse">
             <div class="services__image">
               <img src="img/services/icon-2.png" alt="">
             </div>
             <h3 class="services__title">Аудит Сайтов</h3>
             <span class="services__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</span>
           </div>
-          <div class="services__col">
+          <div class="services__col wow pulse">
             <div class="services__image">
               <img src="img/services/icon-3.png" alt="">
             </div>
             <h3 class="services__title">Создание Сайтов</h3>
             <span class="services__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</span>
           </div>
-          <div class="services__col">
+          <div class="services__col wow pulse">
             <div class="services__image">
               <img src="img/services/icon-4.png" alt="">
             </div>
             <h3 class="services__title">Контекстная Реклама</h3>
             <span class="services__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</span>
           </div>
-          <div class="services__col">
+          <div class="services__col wow pulse">
             <div class="services__image">
               <img src="img/services/icon-5.png" alt="">
             </div>
@@ -202,11 +203,11 @@
       <!-- /.container -->
     </section>
     <!-- /.services -->
-    <section class="price">
+    <section id="price" class="price">
       <img class="price__background" src="img/price/bg.jpg" alt="background">
       <div class="container price__container">
         <form action="send.php" method="POST" class="form price__form">
-          <h2 class="price__main-title">Узнать стоимость</h2>
+          <h2 class="price__main-title wow pulse">Узнать стоимость</h2>
           <div class="input-group price__input-group">
             <label class="label form__label label--light">Имя</label>
             <input type="text" name="userName" autocomplete="off" class="input form__input price__input input--light" id="price-user-name" placeholder="Иван Иванов">
@@ -224,7 +225,7 @@
             <input type="text" name="userMessange" autocomplete="off" class="input form__input price__input input--light" id="price-user-messange" placeholder="Введите Ваше сообщение">
           </div>
           <!-- /.police -->
-          <button class="button button--primary price__button">Узнать стоимость</button>
+          <button class="button button--primary price__button wow zoomIn">Узнать стоимость</button>
         </form>
         <img class="container__image" src="img/price/left-image.png" alt="left-image">
       </div>
@@ -232,8 +233,8 @@
     <!-- /.price -->
     <section class="cases">
       <div class="container cases__container">
-        <h2 class="cases__main-title">Наши Кейсы</h2>
-        <p class="cases__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex</p>
+        <h2 class="cases__main-title wow zoomIn">Наши Кейсы</h2>
+        <p class="cases__text wow zoomIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex</p>
         <div class="swiper-container">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper swiper-no-swiping">
@@ -351,19 +352,19 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-        <button class="button cases__button button--primary">Портфолио</button>
+        <a href="https://saytspb.ru/portfolio" class="button cases__button button--primary">Портфолио</a>
       </div>
     </section>
     <!-- /.cases -->
     <section class="clients">
-      <div class="clients__multiply"><img src="img/clients/multiply.png" alt="multiply"></div>
-      <div class="clients__element"><img src="img/clients/element.png" alt="element"></div>
-      <div class="clients__line"><img src="img/clients/line.png" alt="line"></div>
+      <div class="clients__multiply wow rotateIn"><img src="img/clients/multiply.png" alt="multiply"></div>
+      <div class="clients__element wow pulse"><img src="img/clients/element.png" alt="element"></div>
+      <div class="clients__line wow rotateInDownLeft"><img src="img/clients/line.png" alt="line"></div>
       <div class="clients__circles"><img src="img/clients/circles.png" alt="circles"></div>
       <div class="clients__lines"><img src="img/clients/lines.png" alt="lines"></div>
       <div class="container clients__container">
-        <h2 class="clients__main-title">Отзывы клиентов</h2>
-        <p class="clients__main-text">Если Вы хотите оставить отзыв о проделаной работе, какие-нибудь пожелания или свои впечатления, то можете это сделать, написав на <a class="clients__reference" href="mailto:info@saytspb.ru">почту</a> или <a class="clients__reference" href="https://vk.com/prodvijenie_saitov__spb">Вконтакте</a></p>
+        <h2 class="clients__main-title wow zoomIn">Отзывы клиентов</h2>
+        <p class="clients__main-text wow zoomIn">Если Вы хотите оставить отзыв о проделаной работе, какие-нибудь пожелания или свои впечатления, то можете это сделать, написав на <a class="clients__reference" href="mailto:info@saytspb.ru">почту</a> или <a class="clients__reference" href="https://vk.com/prodvijenie_saitov__spb">Вконтакте</a></p>
         <div class="swiper-container clients__swiper-container">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper swiper-no-swiping">
@@ -427,14 +428,14 @@
           <div class="swiper-button-prev clients__prev"></div>
           <div class="swiper-button-next clients__next"></div>
         </div>
-        <button class="button clients__button button--primary">Читать ещё</button>
+        <a href="https://otzovik.com/reviews/seo_prodvizhenie_sayta_ot_saytspb" class="button clients__button button--primary">Читать ещё</a>
       </div>
     </section>
     <!-- /.clients -->
     <section class="news">
       <div class="container news__container">
-        <h2 class="news__main-title">Последние новости</h2>
-        <p class="news__main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex</p>
+        <h2 class="news__main-title wow zoomIn">Последние новости</h2>
+        <p class="news__main-text wow zoomIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex</p>
         <div class="swiper-container news__swiper-container">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper swiper-no-swiping">
@@ -450,7 +451,7 @@
               <div class="slide__information">
                 <h3 class="news__title">Важнейшие факторы SEO в 2019 году</h3>
                 <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                <button class="button news__button button--primary">Читать далее</button>
+                <a href="https://seo.ru/news/" class="button news__button button--primary">Читать далее</a>
               </div>
             </div>
             <div class="slide swiper-slide news__swiper-slide">
@@ -464,7 +465,7 @@
               <div class="slide__information">
                 <h3 class="news__title">Важнейшие факторы SEO в 2019 году</h3>
                 <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                <button class="button news__button button--primary">Читать далее</button>
+                <a href="https://seo.ru/news/" class="button news__button button--primary">Читать далее</a>
               </div>
             </div>
             <div class="slide swiper-slide news__swiper-slide">
@@ -478,27 +479,27 @@
               <div class="slide__information">
                 <h3 class="news__title">Важнейшие факторы SEO в 2019 году</h3>
                 <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-                <button class="button news__button button--primary">Читать далее</button>
+                <a href="https://seo.ru/news/" class="button news__button button--primary">Читать далее</a>
               </div>
             </div>
           </div>
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev news__prev"></div>
-          <div class="swiper-button-next news__next"></div>
+          <div id="footer" class="swiper-button-next news__next"></div>
         </div>
       </div>
     </section>
     <!-- /.news -->
   </main>
-  <footer id="footer" class="footer">
-    <div class="footer__line"><img src="img/footer/line.png" alt="line"></div>
+  <footer class="footer">
+    <div class="footer__line wow fadeInLeft"><img src="img/footer/line.png" alt="line"></div>
     <div class="footer__left"><img src="img/footer/left.png" alt="left"></div>
     <div class="container footer__container">
       <div class="row footer__row">
         <div class="col footer__col">
           <div class="row data footer__data">
             <div class="col">
-              <h2 class="footer__main-title">Остались вопросы?<br>Напишите нам!<br>Отправте Ваше сообщение через форму или <a href="mailto:info@saytspb.ru" class="footer__link">e-mail</a>.</h2>
+              <h2 class="footer__main-title wow pulse">Остались вопросы?<br>Напишите нам!<br>Отправте Ваше сообщение через форму или <a href="mailto:info@saytspb.ru" class="footer__link">e-mail</a>.</h2>
             </div>
             <div class="col">
               <div class="box footer__box">
@@ -550,10 +551,10 @@
     </div>
     <div class="information footer__information">
       <div class="container information__container">
-        <a href="#">
+        <a href="#hero">
           <img class="information__img" src="img/footer/logo.png" alt="logo">
         </a>
-        <a class="information__link" href="#">Saytspb</a>
+        <a class="information__link" href="#hero">Saytspb</a>
         <p class="information__author">Glo Academy</p>
         <p class="information__rules">Copyright © 2019. Все права защищены</p>
       </div>
@@ -585,11 +586,14 @@
     <!-- /.success__dialog -->
   </div>
   <!-- /.success -->
+  <a href="#" class="scrollup"></a>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -67,7 +67,41 @@ $(document).ready(function () {
       $('.header__menu').css('background-color', 'transparent');
     }
   });
+ 
+  $(window).scroll(function(){
+  if ($(this).scrollTop() > 100) {
+  $('.scrollup').fadeIn();
+  } else {
+  $('.scrollup').fadeOut();
+  }
+  });
+    
+  $('.scrollup').click(function(){
+  $("html, body").animate({ scrollTop: 0 }, 600);
+  return false;
+  });
   
+  $(".logo").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+
+  $(".information__container").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+
+  $(".nav").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+
   $(document).ready(function () {
   //initialize swiper when document ready
     var mySwiper = new Swiper ('.swiper-container', {
@@ -225,6 +259,8 @@ $(document).ready(function () {
       });
     }
   });
+
+  new WOW().init();
 
   //маска для телефона
   $('[type=tel]').mask('+7(000) 000-00-00');
