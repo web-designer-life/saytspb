@@ -149,7 +149,8 @@ $(document).ready(function () {
           //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();
           modal.toggleClass('modal--visible');
-          success.toggleClass('success--visible'); return true;
+          success.toggleClass('success--visible');
+          ym(61647805, 'reachGoal', 'click'); return true;
         },
         error: function(response) {
           console.error('Ошибка запроса ' + response);
@@ -203,7 +204,8 @@ $(document).ready(function () {
         success: function (response) {
           //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();
-          success.toggleClass('success--visible'); return true;
+          success.toggleClass('success--visible');
+          ym(61647805, 'reachGoal', 'click'); return true;
         },
         error: function(response) {
           console.error('Ошибка запроса ' + response);
@@ -251,7 +253,8 @@ $(document).ready(function () {
         success: function (response) {
           //alert('Форма отправлена, мы свяжемся с вами через 10 минут');
           $(form)[0].reset();
-          success.toggleClass('success--visible'); return true;
+          success.toggleClass('success--visible'); 
+          ym(61647805, 'reachGoal', 'click'); return true;
         },
         error: function(response) {
           console.error('Ошибка запроса ' + response);
