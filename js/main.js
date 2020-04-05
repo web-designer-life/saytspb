@@ -16,6 +16,9 @@ $(document).ready(function () {
       switchSuccess = function() {
         success.toggleClass('success--visible');
       };
+  if ($('window').width() >=992) {
+    $('body *').unbind('mouseenter mouseleave');
+  }
 
   modalBtn.on('click', switchModal);
 

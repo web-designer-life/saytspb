@@ -1,3 +1,97 @@
+@media screen and ( min-width: 992px )
+  .button
+    &:hover
+      cursor: pointer
+    &--primary
+      &:hover
+        cursor: pointer
+        color: $primary
+        background-color: $light
+    &--outline
+      &:hover
+        color: #bdbdbd
+        border: 1px solid #bdbdbd
+  .scrollup
+    &:hover
+      opacity: 0.4
+  .logo
+    &__link
+      &:hover
+        cursor: pointer
+        color: lighten($black, 30%)
+    &__img
+      &:hover
+        cursor: pointer
+        opacity: 0.7
+  .nav
+    &__item
+      &:hover
+        cursor: pointer
+        color: $dark
+        font-weight: 400
+        &::after
+          width: 67%
+  .phone
+    &:hover
+      text-decoration: none
+      opacity: 0.5
+  .contacts
+    &__phone
+      &:hover
+        cursor: pointer
+        color: lighten($black, 30%)
+  .social
+    &__link
+      &:hover
+        opacity: 0.5
+  .play
+    &:hover
+      opacity: 0.7
+  .services
+    &__col
+      &:hover
+        border: none
+        padding: 2.86rem 2.57rem 3.07rem 2.36rem
+        box-shadow: 0 0 10.4px 2.6px rgba(34, 34, 34, 0.05)
+        border-bottom: solid 5px $primary
+  .clients
+    &__reference
+      &:hover
+        opacity: 0.6  
+  .footer
+    &__link
+      &:hover
+        opacity: 0.7
+    &__phone
+      &:hover
+        color: #1a1a1a
+        text-decoration: underline
+    &__mail
+      &:hover
+        color: #1a1a1a
+        text-decoration: underline
+    &__button
+      &:hover
+        color: $light
+        border-radius: 24.5px
+        background-color: $primary
+        border: 2px solid $light
+  .information
+    &__img
+      &:hover
+        cursor: pointer
+        opacity: 0.7
+    &__link
+      &:hover
+        cursor: pointer
+        color: lighten($black, 30%)
+  .success
+    &__close
+      &:hover
+        opacity: 0.7
+    &__link
+      &:hover
+        opacity: 0.7
 @media screen and ( max-width: 1440px ) 
   .hero
     &__social
@@ -148,8 +242,6 @@
       margin: 0
       width: 100%
 @media screen and ( max-width: 992px ) 
-  *:hover 
-    
   html
     font-size: 12px
   .header
@@ -188,22 +280,15 @@
   .logo
     &__link
       color: $dark
-      &:hover
-        cursor: pointer
-        color: lighten($black, 30%)
   .nav
     &__item
       color: $light
       margin-top: 15px
-      &:hover
-        color: darken($light, 20%)
   .contacts
     &__phone
       color: $light
       margin: auto
       margin-bottom: 5px
-      &:hover
-        color: lighten($black, 70%)
   .burger
     position: fixed
     right: 32px
