@@ -130,9 +130,7 @@
     &::before
       display: none 
     &__line
-      transform: rotate(90deg)
-      top: 30%
-      left: 40%
+      display: none
     &__container
       height: auto
     &__left
@@ -150,11 +148,108 @@
       margin: 0
       width: 100%
 @media screen and ( max-width: 992px ) 
+  *:hover 
+    
   html
     font-size: 12px
   .header
-    &__nav
+    &__information
+      position: absolute
+      right: 20px
+      top: 0
+      width: auto
+      color: $light
+      background-color: #4e000a
+      display: flex
+      flex-direction: column
+      padding: 0px 30px 12px 20px
+      margin-top: 20px
+      border-radius: 20px
       display: none
+      &--active
+        display: block
+    &__logo
+      margin-left: 0 
+    &__nav
+      width: auto
+      display: flex
+      flex-direction: column
+      margin: auto
+    &__contacts
+      display: flex
+      flex-direction: column
+      margin: auto
+      margin-top: 5px
+    &__burger
+      width: 42px
+      height: 42px
+      background-color: $primary
+      border-radius: 50%
+  .logo
+    &__link
+      color: $dark
+      &:hover
+        cursor: pointer
+        color: lighten($black, 30%)
+  .nav
+    &__item
+      color: $light
+      margin-top: 15px
+      &:hover
+        color: darken($light, 20%)
+  .contacts
+    &__phone
+      color: $light
+      margin: auto
+      margin-bottom: 5px
+      &:hover
+        color: lighten($black, 70%)
+  .burger
+    position: fixed
+    right: 32px
+    top: 32px
+    &__menu-button
+      display: block
+      position: absolute
+      left: 6px
+      top: 47%
+      width: 30px
+      height: 3px
+      background: $light
+      border: none
+      cursor: pointer
+      z-index: 15
+      border-radius: 3px
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        width: 30px
+        height: 3px
+        background: $light
+        transition: transform 0.2s
+        margin-top: -7px
+        border-radius: 3px
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        width: 30px
+        height: 3px
+        background: $light
+        transition: transform 0.2s
+        margin-top: 7px
+        border-radius: 3px
+      &--active
+        height: 0
+        &::before
+          transform: rotate(45deg)
+          margin-top: 0
+        &::after
+          transform: rotate(-45deg)
+          margin-top: 0
   .contacts
     &__phone
       margin-right: 14px
@@ -199,7 +294,7 @@
       width: 14%
     &__line
       left: 0
-      top: 22%
+      top: 28%
       width: 16%
     &__circles
       top: 72%
@@ -310,105 +405,7 @@
   .footer
     &__line
       left: -12%
-@media screen and ( max-width: 540px )       
-  .header
-    &__information
-      position: absolute
-      right: 20px
-      top: 0
-      width: auto
-      color: $light
-      background-color: #4e000a
-      display: flex
-      flex-direction: column
-      padding: 0px 30px 12px 20px
-      margin-top: 20px
-      border-radius: 20px
-      display: none
-      &--active
-        display: block
-    &__logo
-      margin-left: 0 
-    &__nav
-      width: auto
-      display: flex
-      flex-direction: column
-      margin: auto
-    &__contacts
-      display: flex
-      flex-direction: column
-      margin: auto
-      margin-top: 5px
-    &__burger
-      width: 42px
-      height: 42px
-      background-color: $primary
-      border-radius: 50%
-  .logo
-    &__link
-      color: $dark
-      &:hover
-        cursor: pointer
-        color: lighten($black, 30%)
-  .nav
-    &__item
-      color: $light
-      margin-top: 15px
-      &:hover
-        color: darken($light, 20%)
-  .contacts
-    &__phone
-      color: $light
-      margin: auto
-      margin-bottom: 5px
-      &:hover
-        color: lighten($black, 70%)
-  .burger
-    position: fixed
-    right: 32px
-    top: 32px
-    &__menu-button
-      display: block
-      position: absolute
-      left: 6px
-      top: 47%
-      width: 30px
-      height: 3px
-      background: $light
-      border: none
-      cursor: pointer
-      z-index: 15
-      border-radius: 3px
-      &::before
-        content: ''
-        display: block
-        position: absolute
-        top: 0
-        width: 30px
-        height: 3px
-        background: $light
-        transition: transform 0.2s
-        margin-top: -7px
-        border-radius: 3px
-      &::after
-        content: ''
-        display: block
-        position: absolute
-        top: 0
-        width: 30px
-        height: 3px
-        background: $light
-        transition: transform 0.2s
-        margin-top: 7px
-        border-radius: 3px
-      &--active
-        height: 0
-        &::before
-          transform: rotate(45deg)
-          margin-top: 0
-        &::after
-          transform: rotate(-45deg)
-          margin-top: 0
+@media screen and ( max-width: 540px )  
   .hero
     &__seo
       display: block

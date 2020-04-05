@@ -1,5 +1,6 @@
 var menuButton = document.querySelector('.burger__menu-button');
 var menu = document.querySelector('.header__information');
+
 $(document).ready(function () {
   var modal = $('.modal'),
       success = $('.success'),
@@ -102,9 +103,13 @@ $(document).ready(function () {
     $('body,html').animate({scrollTop: top}, 1500);
   });
 
-  $(document).ready(function () {
-  //initialize swiper when document ready
-    var mySwiper = new Swiper ('.swiper-container', {
+  if (window.matchMedia("(min-width: 992px)").matches) {
+    /* the viewport is at least 400 pixels wide */
+  } else {
+    /* the viewport is less than 400 pixels wide */
+  }
+  
+  var mySwiper = new Swiper ('.swiper-container', {
       // Optional parameters
       loop: true,
       navigation: {
@@ -112,7 +117,6 @@ $(document).ready(function () {
         prevEl: '.swiper-button-prev',
       },
     });
-  });
 
   var next = $('.news__next');
   var prev = $('.news__prev');
@@ -192,7 +196,7 @@ $(document).ready(function () {
       },
       userAddress: {
         required: "Заполните поле: Адрес веб-сайта",
-        url: "Введите корректный адрес веб-сайта"
+        url: "Формат: https://example.com"
       },
       userMessange: "Заполните поле: Сообщение"
     },
@@ -267,5 +271,4 @@ $(document).ready(function () {
 
   //маска для телефона
   $('[type=tel]').mask('+7(000) 000-00-00');
-
 });
