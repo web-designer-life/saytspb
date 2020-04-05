@@ -1,11 +1,11 @@
 var {src, dest, watch, series} = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
 var minify = require('gulp-minify');
 var htmlmin = require('gulp-htmlmin');
 var tinypng = require('gulp-tinypng-compress');
+var autoprefixer = require('gulp-autoprefixer');
 
 function bs() {
   serveSass();
