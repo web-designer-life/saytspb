@@ -2186,14 +2186,16 @@ img {
     left: 40.5%; }
   .advantages__main-title {
     font-size: 2.8rem; }
-  .services__triangle {
-    right: 3%; }
-  .services__points {
-    bottom: 0; }
-  .services__lines {
-    bottom: 18%; }
-  .services__circle {
-    top: 40%; }
+  .services {
+    margin-bottom: 3rem; }
+    .services__triangle {
+      right: 3%; }
+    .services__points {
+      bottom: 0; }
+    .services__lines {
+      bottom: 18%; }
+    .services__circle {
+      top: 40%; }
   .swiper-button-prev {
     left: 0.5rem; }
   .swiper-button-next {
