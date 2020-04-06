@@ -463,7 +463,7 @@ img {
   width: 100%;
   z-index: 99;
   background-color: transporent;
-  padding: 32px;
+  padding: 32px 1.1rem;
   padding-bottom: 10px; }
   .header__container {
     max-width: 1170px;
@@ -2088,6 +2088,9 @@ img {
     border: 1px solid #bdbdbd; }
   .scrollup:hover {
     opacity: 0.4; }
+  .header {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem; }
   .logo__link:hover {
     cursor: pointer;
     color: #838589; }
@@ -2325,7 +2328,7 @@ img {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0px 20px 12px 20px;
+    padding: 0px 1.1rem 12px 1.1rem;
     margin-top: 15px;
     border-radius: 20px;
     display: none; }
@@ -2373,7 +2376,7 @@ img {
     margin-bottom: 5px; }
   .burger {
     position: fixed;
-    right: 32px;
+    right: 1.1rem;
     top: 32px; }
     .burger__menu-button {
       display: block;
