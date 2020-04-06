@@ -3,6 +3,7 @@
   &__background
     margin-top: 8rem
     object-fit: cover
+    size: cover
     min-height: 300px
   &__container
     margin: auto
@@ -48,6 +49,9 @@
     top: 60.5%
     left: 47%
 .play
+  display: flex
+  align-items: center
+  justify-content: center
   width: 94px
   height: 94px  
   background-color: rgba(#808080, 0.68)
@@ -56,6 +60,7 @@
   transition: 0.3s
   &__img
     position: relative
+    height: 31px
     transform: translateX(5px)
   &::before
     position: absolute
