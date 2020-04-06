@@ -120,7 +120,7 @@
   .video
     &__play
       top: 65%
-      left: 47%
+      left: 46.5%
   .services
     &__triangle
       right: 5%
@@ -179,7 +179,7 @@
       font-size: 1rem
     &__play
       top: 65%
-      left: 47%
+      left: 46%
   .col
     &-25
       flex-basis: 50%
@@ -272,8 +272,8 @@
       background-color: #4e000a
       display: flex
       flex-direction: column
-      padding: 0px 30px 12px 20px
-      margin-top: 20px
+      padding: 0px 20px 12px 20px
+      margin-top: 15px
       border-radius: 20px
       display: none
       &--active
@@ -380,7 +380,7 @@
   .video
     &__play
       top: 68%
-      left: 47%
+      left: 44.5%
   .services
     &__triangle
       top: 12%
@@ -417,6 +417,11 @@
     &__line
       width: 30%
       left: -9%
+@media screen and ( max-width: 864px )   
+  .slide
+    &__main-photo
+      left: 0
+      width: 100%
 @media screen and ( max-width: 773px )       
   .services
     &__triangle
@@ -429,8 +434,6 @@
   .header
     &__logo
       margin-right: auto
-    &__nav
-      margin-right: 14px
   .contacts
     &__phone
       margin-right: 14px
@@ -447,7 +450,7 @@
       max-width: 500px
   .video
     &__play
-      left: 42.5%
+      left: 44%
   .advantages
     &__main-title
       padding-left: 0
@@ -459,16 +462,15 @@
     &__circle
       top: 30%
       left: 3%
+  .clients
+    &__main-text
+      margin-bottom: 3rem
   .swiper
     &-button
       &-prev
         left: 1rem
       &-next
         right: 1rem
-  .slide
-    &__information
-      width: 100%
-      bottom: 6rem
   .news
     &__swiper-container
       margin-bottom: 0
@@ -476,6 +478,10 @@
   .hero
     &__main
       width: 30%
+@media screen and ( max-width: 750px )  
+  .slide
+    &__information
+      bottom: 6rem
 @media screen and ( max-width: 720px )       
   .price
     &__form
@@ -489,12 +495,20 @@
       border-radius: 20px
     &__main-title
       padding-top: 5rem
+@media screen and ( max-width: 670px )         
+  .video
+    &__play
+      left: 42%
 @media screen and ( max-height: 600px )       
   .hero
     &__multiply
       width: 7%
       top: 25%
       left: 2%
+  .slide
+    &__information
+      width: 100%
+      bottom: 6rem
 @media screen and ( max-width: 560px )  
   .cases
     &__content
@@ -519,13 +533,18 @@
     &__text
       font-size: 1rem
   .video
+    &__description
+      width: 92%
+      left: 4% 
     &__play
-      left: 40.5%
+      left: 40%
   .advantages
     &__main-title
       font-size: 2.8rem
   .services
     margin-bottom: 3rem
+    padding-left: 1.1rem
+    padding-right: 1.1rem
     &__triangle
       right: 3%
     &__points
@@ -537,21 +556,45 @@
   .swiper
     &-button
       &-prev
-        left: 0.5rem
+        left: -0.35rem
       &-next
-        right: 0.5rem
+        right: -0.35rem
+  .price
+    &__container
+      width: auto
+      margin-left: 1.1rem
+      margin-right: 1.1rem
+  .cases
+    &__content
+      width: auto
+      margin-left: 1.1rem
+      margin-right: 1.1rem
   .clients
     &__multiply
       left: 3%
       top: 3%
       width: 6%
+    &__description
+      font-size: 1.3rem
+      padding: 0 1.7rem
+  .slide
+    &__information
+      border-radius: 0 0 20px 20px
+  .news
+    &__swiper-container
+      margin-left: 1.1rem
+      margin-right: 1.1rem
+      border-radius: 20px 20px 0 0 
+  .footer
+    &__main-title
+      max-width: 350px
+    &__col
+      padding-left: 1.1rem
+      padding-right: 1.1rem
   .success
     &__dialog
       width: 80%
       margin: auto
-  .footer
-    &__main-title
-      max-width: 250px
 @media screen and ( max-height: 540px )       
   .hero
     &__main
@@ -576,10 +619,20 @@
   .services
     &__col
       min-width: 90%
+  .cases
+    &__second-title
+      margin-top: 0.5rem
+      margin-bottom: 0.5rem
+    &__col
+      &--distributed
+        margin-bottom: 0.5rem
   .footer
     &__form
       padding: 2rem 1rem
 @media screen and ( max-width: 441px )
+  .video
+    &__play
+      left: 39%
   .news
     &__swiper-container
       height: 620px
@@ -594,7 +647,7 @@
       &--second
         margin-left: 0
     &__col
-      padding: 16px 32px
+      padding: 16px 1.1rem
   .box
     &__col
       width: 100%
@@ -602,19 +655,17 @@
   .video
     &__background
       margin-top: 15rem
-    &__play
-      top: 60%
-      left: 44%
 @media screen and ( max-width: 400px )       
   .video
     &__play
-      left: 36.5%
+      left: 38%
   .advantages
     &__description
       width: 256px
   .slide
     &__information
       padding: 1rem
+      justify-content: center
   .news
     &__swiper-container
       height: 500px
@@ -625,8 +676,8 @@
 @media screen and ( max-width: 392px )  
   .video
     &__description
-      width: 80%
-      left: 10%
+      width: 92%
+      left: 4%
       flex-wrap: wrap
       padding: 0
       background: $light
@@ -637,6 +688,7 @@
     &__text
       font-size: 1rem
     &__play
+      left: 38%
       top: 79%
   .col
     &-25
@@ -652,3 +704,7 @@
     margin: auto
     &__dialog
       padding: 2.7rem 1.5rem 1.929rem 1.5rem
+@media screen and ( max-width: 340px )  
+  .video
+    &__play
+      left: 36%

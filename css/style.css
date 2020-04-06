@@ -1633,8 +1633,7 @@ img {
   .slide__main-photo {
     position: absolute;
     top: 0;
-    left: 3px;
-    width: 100%; }
+    left: 3px; }
   .slide__information {
     position: absolute;
     display: -webkit-box;
@@ -1654,9 +1653,7 @@ img {
     bottom: 0;
     right: 0;
     background-color: #fff;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 0 10.4px 2.6px rgba(34, 34, 34, 0.05);
-            box-shadow: 0 0 10.4px 2.6px rgba(34, 34, 34, 0.05); }
+    border-radius: 5px; }
   .slide__date {
     position: absolute;
     top: 1.71rem;
@@ -1900,7 +1897,7 @@ img {
   transition: 0.3s; }
 
 .information__author {
-  width: 90%;
+  width: 94%;
   margin: 0;
   margin-top: 18px;
   bottom: 8.6rem;
@@ -2170,7 +2167,7 @@ img {
     margin-left: 2rem; }
   .video__play {
     top: 65%;
-    left: 47%; }
+    left: 46.5%; }
   .services__triangle {
     right: 5%; }
   .services__circle {
@@ -2225,7 +2222,7 @@ img {
     font-size: 1rem; }
   .video__play {
     top: 65%;
-    left: 47%; }
+    left: 46%; }
   .col-25 {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
@@ -2328,8 +2325,8 @@ img {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0px 30px 12px 20px;
-    margin-top: 20px;
+    padding: 0px 20px 12px 20px;
+    margin-top: 15px;
     border-radius: 20px;
     display: none; }
     .header__information--active {
@@ -2456,7 +2453,7 @@ img {
     max-width: 400px; }
   .video__play {
     top: 68%;
-    left: 47%; }
+    left: 44.5%; }
   .services__triangle {
     top: 12%; }
   .clients__main-text {
@@ -2490,6 +2487,11 @@ img {
     width: 30%;
     left: -9%; } }
 
+@media screen and (max-width: 864px) {
+  .slide__main-photo {
+    left: 0;
+    width: 100%; } }
+
 @media screen and (max-width: 773px) {
   .services__triangle {
     top: 9%;
@@ -2500,8 +2502,6 @@ img {
 @media screen and (max-width: 768px) {
   .header__logo {
     margin-right: auto; }
-  .header__nav {
-    margin-right: 14px; }
   .contacts__phone {
     margin-right: 14px; }
   .hero__seo {
@@ -2515,7 +2515,7 @@ img {
   .hero__text {
     max-width: 500px; }
   .video__play {
-    left: 42.5%; }
+    left: 44%; }
   .advantages__main-title {
     padding-left: 0; }
   .services__main-title {
@@ -2525,19 +2525,22 @@ img {
   .services__circle {
     top: 30%;
     left: 3%; }
+  .clients__main-text {
+    margin-bottom: 3rem; }
   .swiper-button-prev {
     left: 1rem; }
   .swiper-button-next {
     right: 1rem; }
-  .slide__information {
-    width: 100%;
-    bottom: 6rem; }
   .news__swiper-container {
     margin-bottom: 0; } }
 
 @media screen and (max-height: 768px) {
   .hero__main {
     width: 30%; } }
+
+@media screen and (max-width: 750px) {
+  .slide__information {
+    bottom: 6rem; } }
 
 @media screen and (max-width: 720px) {
   .price__form {
@@ -2552,11 +2555,18 @@ img {
     .price__main-title {
       padding-top: 5rem; } }
 
+@media screen and (max-width: 670px) {
+  .video__play {
+    left: 42%; } }
+
 @media screen and (max-height: 600px) {
   .hero__multiply {
     width: 7%;
     top: 25%;
-    left: 2%; } }
+    left: 2%; }
+  .slide__information {
+    width: 100%;
+    bottom: 6rem; } }
 
 @media screen and (max-width: 560px) {
   .cases__content {
@@ -2579,12 +2589,17 @@ img {
     font-size: 2rem; }
   .hero__text {
     font-size: 1rem; }
+  .video__description {
+    width: 92%;
+    left: 4%; }
   .video__play {
-    left: 40.5%; }
+    left: 40%; }
   .advantages__main-title {
     font-size: 2.8rem; }
   .services {
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem; }
     .services__triangle {
       right: 3%; }
     .services__points {
@@ -2594,18 +2609,38 @@ img {
     .services__circle {
       top: 40%; }
   .swiper-button-prev {
-    left: 0.5rem; }
+    left: -0.35rem; }
   .swiper-button-next {
-    right: 0.5rem; }
+    right: -0.35rem; }
+  .price__container {
+    width: auto;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem; }
+  .cases__content {
+    width: auto;
+    margin-left: 1.1rem;
+    margin-right: 1.1rem; }
   .clients__multiply {
     left: 3%;
     top: 3%;
     width: 6%; }
+  .clients__description {
+    font-size: 1.3rem;
+    padding: 0 1.7rem; }
+  .slide__information {
+    border-radius: 0 0 20px 20px; }
+  .news__swiper-container {
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+    border-radius: 20px 20px 0 0; }
+  .footer__main-title {
+    max-width: 350px; }
+  .footer__col {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem; }
   .success__dialog {
     width: 80%;
-    margin: auto; }
-  .footer__main-title {
-    max-width: 250px; } }
+    margin: auto; } }
 
 @media screen and (max-height: 540px) {
   .hero__main {
@@ -2627,10 +2662,17 @@ img {
     min-width: 90%; }
   .services__col {
     min-width: 90%; }
+  .cases__second-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
+  .cases__col--distributed {
+    margin-bottom: 0.5rem; }
   .footer__form {
     padding: 2rem 1rem; } }
 
 @media screen and (max-width: 441px) {
+  .video__play {
+    left: 39%; }
   .news__swiper-container {
     height: 620px; }
   .footer__line {
@@ -2644,24 +2686,25 @@ img {
   .footer__description--second {
     margin-left: 0; }
   .footer__col {
-    padding: 16px 32px; }
+    padding: 16px 1.1rem; }
   .box__col {
     width: 100%; } }
 
 @media screen and (max-height: 400px) {
   .video__background {
-    margin-top: 15rem; }
-  .video__play {
-    top: 60%;
-    left: 44%; } }
+    margin-top: 15rem; } }
 
 @media screen and (max-width: 400px) {
   .video__play {
-    left: 36.5%; }
+    left: 38%; }
   .advantages__description {
     width: 256px; }
   .slide__information {
-    padding: 1rem; }
+    padding: 1rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .news__swiper-container {
     height: 500px; }
   .news__title {
@@ -2671,8 +2714,8 @@ img {
 
 @media screen and (max-width: 392px) {
   .video__description {
-    width: 80%;
-    left: 10%;
+    width: 92%;
+    left: 4%;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -2685,6 +2728,7 @@ img {
   .video__text {
     font-size: 1rem; }
   .video__play {
+    left: 38%;
     top: 79%; }
   .col-25 {
     -webkit-flex-basis: 100%;
@@ -2699,3 +2743,7 @@ img {
     margin: auto; }
     .modal__dialog {
       padding: 2.7rem 1.5rem 1.929rem 1.5rem; } }
+
+@media screen and (max-width: 340px) {
+  .video__play {
+    left: 36%; } }
